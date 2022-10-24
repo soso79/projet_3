@@ -112,6 +112,8 @@ a {
   height: 40px;
   border-radius: 50%;
   background-color: #9356DC;
+  position: absolute;
+  left: 28px;
 }
 .fonction__numbers {
   color: white;
