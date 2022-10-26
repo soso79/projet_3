@@ -51,8 +51,9 @@ a {
     align-items: center;
     width: 100%;
     height: 80px;
-    border-top: 2px solid gray;
+    
     background-color: #e6e6e6;
+    box-shadow: 20px,0,0,0 red;
     
 
 
@@ -160,6 +161,7 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
+        
 
 
 
@@ -185,8 +187,9 @@ a {
         height: 40px;
         border-radius: 50%;
         background-color: #9356DC;
-        position: absolute;
-        left: +23px;
+        position: relative;
+        right: 20px;
+        
 
     }
 
@@ -444,6 +447,8 @@ footer {
     justify-content: center;
     align-items: center;
     border: 2px solid red;
+    position: relative ;
+    top: -50px;
 
 
 &__picture{
@@ -476,7 +481,11 @@ footer {
         
         background-image: linear-gradient(to top, #9356DC, #FF79DA);
         border: 2px solid red;
+        
+            color: white;
+        
 }
+
 
 }
 
@@ -539,8 +548,6 @@ border: 2px solid red;
     .plats__title{
         width: 100%;
         flex-wrap: wrap;
-        border-bottom : 3px solid aqua;
-        display: inline-block;
         border: 2px solid red;
         
         
@@ -570,8 +577,9 @@ border: 2px solid red;
 
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        margin: 0;
+        
+        
         border: 2px solid red;
         
         
@@ -580,10 +588,21 @@ border: 2px solid red;
         .Desserts__title{
             width: 100%;
             flex-wrap: wrap;
-            border-bottom : 3px solid aqua;
-            display: inline-block;
-            border: 2px solid red;
+            margin: 0;
+            padding: 0;
             
+            
+            
+            
+        }
+
+        .Desserts__line{
+            width: 80px;
+            border: 2px solid #99E2D0;
+            height: 0px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        
             
         }
         
@@ -599,7 +618,7 @@ border: 2px solid red;
                 border-radius: 25px;
                 box-shadow: 4px 4px 10px gray;
                 margin-bottom: 20px;
-                border: 2px solid red;
+                border: 2px solid violet;
         }
         .Desserts__prix{
             margin-top: 26px;
