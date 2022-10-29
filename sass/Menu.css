@@ -84,6 +84,11 @@ a {
   font-family: "Shrikhand", cursive;
 }
 
+.menu__speciale {
+  width: 100%;
+  height: 1850px;
+}
+
 .entrees__can {
   display: flex;
   flex-direction: column;
