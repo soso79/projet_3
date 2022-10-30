@@ -145,6 +145,8 @@ a {
         font-family: 'Shrikhand', cursive;
     }
 
+    
+
 }
 
 .menu__speciale{
@@ -161,6 +163,40 @@ a {
     top: -50px;
 }
 
+.menu__tarifs {
+
+
+    width: 20px;
+    position: relative;
+    
+
+    &:hover {
+        opacity: 1;
+        left: -50px;
+    }
+
+}
+
+.entrees__icon {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+        background-color: #9356DC;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
 .entrees__can {
 
     display: flex;
@@ -172,6 +208,14 @@ a {
 
 
 
+}
+
+
+.entrees__texte{
+
+
+
+    font-size: 10px;
 }
 
 .entrees__title {
@@ -203,7 +247,7 @@ a {
 }
 
 .entrees__prix {
-    margin-top: 26px;
+    
     border: 2px solid violet;
     width:60px;
     height: 60px;
