@@ -291,7 +291,7 @@ a {
         align-items: center;
         width: 100%;
         height: 80px;
-        border: 2px solid red;
+        
 
 
 
@@ -309,27 +309,23 @@ a {
 
 
     &__news{
-        width: 130px;
+        width: 125px;
         height: 45px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: aqua;
-        border: 2px solid black;
+        background-color:#99E2D0;
         position: absolute;
         right:+10px;
         top: +50px;
+        border-radius: 4px;
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    }
+
+    &__nouveau{
+        color: #3ca288;
+        font-size: 20px;
     }
 
 
