@@ -253,10 +253,15 @@ h2 {
     color: white;
   }
 }
-/* ici commence la version desktop*/
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   body {
     margin: 0px;
     padding: 0px;
+  }
+  .reservation {
+    background-color: #9356DC;
+    width: 90%;
+    height: 800px;
+    border: 2px solid red;
   }
 }/*# sourceMappingURL=main.css.map */
