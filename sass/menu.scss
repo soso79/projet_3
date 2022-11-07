@@ -12,6 +12,13 @@
         
     
     }
+
+    main{
+        width: 95%;
+        height: auto;
+        margin: auto;
+
+    }
     
     
     
@@ -604,7 +611,7 @@ body{
     
         font-family: 'Shrikhand', cursive;
         font-size: 42px;
-        margin-left: 100px;
+        margin-left: 50px;
     
     
     
@@ -615,7 +622,7 @@ body{
     .menu {
     
         width: 100%;
-        height: 1850px;
+        height: 1550px;
         border-radius: 30px 30px 0 0;
         background-color: #F2F2F2;
         margin-top: 0px;
@@ -649,7 +656,12 @@ body{
     
             display: flex;
             align-items: center;
+            justify-content: flex-start;
             justify-content: space-around;
+            margin-bottom: 50px;
+            margin-top: -50px;
+
+            border: 2px solid red;
     
     
     
@@ -660,7 +672,7 @@ body{
             width: 300px;
             height: 70px;
             border-radius: 50px;
-            margin-top: 20px;
+            margin-top: 80px;
     
             background-image: linear-gradient(to top, #9356DC, #FF79DA);
     
@@ -731,7 +743,7 @@ body{
         flex-direction: column;
         margin-bottom: 20px;
         width: 430px;
-        height: 400px;
+        height: 350px;
         border: 2px solid red;
         
     
@@ -807,7 +819,7 @@ body{
         margin: 0;
         margin-bottom: 20px;
         width: 430px;
-        height: 400px;
+        height: 350px;
         border: 2px solid red;
     
     
@@ -867,8 +879,8 @@ body{
         flex-direction: column;
         align-items: flex-start;
         margin: 0;
-        width: 430px;
-        height: 400px;
+        width: 100%;
+        height: 350px;
         border: 2px solid red;
     
     
@@ -877,7 +889,7 @@ body{
     }
     
     .Desserts__title {
-        width: 100%;
+        width: 430px;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -927,11 +939,13 @@ body{
     
     footer {
     
-        width: 460px;
+        width: 95%;
         height: 400px;
         background-color: rgb(67, 64, 64);
         display: flex;
         flex-direction: column;
+        margin-top: -50px;
+        margin-left: 12px;
         
        
     
