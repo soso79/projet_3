@@ -116,7 +116,6 @@ a {
 .entrees {
   width: 50%;
   height: 500px;
-  background-color: #FF79DA;
 }
 .entrees__icon {
   width: 30px;
@@ -155,7 +154,6 @@ a {
   margin-bottom: 40px;
 }
 .entrees__prix {
-  border: 2px solid violet;
   width: 60px;
   height: 60px;
   display: flex;
@@ -173,7 +171,6 @@ a {
 .plats {
   width: 50%;
   height: 500px;
-  background-color: #FF79DA;
 }
 .plats__can {
   display: flex;
