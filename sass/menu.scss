@@ -13,12 +13,7 @@
     
     }
 
-    main{
-        width: 95%;
-        height: auto;
-        margin: auto;
-
-    }
+    
     
     
     
@@ -425,18 +420,28 @@
     }
     
     
-    footer {
     
+    
+    
+    footer{
         width: 100%;
-        height: 400px;
+        height: 330px;
         background-color: rgb(67, 64, 64);
+        margin-top: -50px;
+
+    }
+    .footer__can{
+
         display: flex;
         flex-direction: column;
-       
-    
-    
-    
+        width: 100%;
+        height: 100%;
+        
+        
+
     }
+
+    
     
     
     
@@ -451,7 +456,7 @@
     
     .footer__list {
         width: 80%;
-        height: 100px;
+        height: 50px;
     
         display: flex;
         align-items: center;
@@ -503,10 +508,7 @@
 
 @media screen and (max-width:992px){
 
-body{
-    background-color: #FF79DA;
-    max-width: 992px;
-}
+
 .header__logo{
     margin-left: 200px;
 }
@@ -531,17 +533,13 @@ body{
 
 
 @media screen and (max-width: 768px){
-
-
-
-    body {
-    
-        margin: 0px;
-        padding: 0px;
+    body{
         max-width: 768px;
-        background-color: #9356DC;
-    
     }
+
+
+
+   
     
     
     
@@ -622,7 +620,7 @@ body{
     .menu {
     
         width: 100%;
-        height: 1550px;
+        height: 1850px;
         border-radius: 30px 30px 0 0;
         background-color: #F2F2F2;
         margin-top: 0px;
@@ -658,10 +656,10 @@ body{
             align-items: center;
             justify-content: flex-start;
             justify-content: space-around;
-            margin-bottom: 50px;
-            margin-top: -50px;
 
-            border: 2px solid red;
+            
+            width: 90%;
+            
     
     
     
@@ -670,7 +668,7 @@ body{
         &__bouton {
     
             width: 300px;
-            height: 70px;
+            height: 40px;
             border-radius: 50px;
             margin-top: 80px;
     
@@ -687,9 +685,9 @@ body{
     
         
     
-    }
     
-    .menu__speciale{
+    
+    &__speciale{
         width: 100%;
         height: 1750px;
         border-radius: 30px 30px 0 0;
@@ -703,7 +701,7 @@ body{
         top: -50px;
     }
     
-    .menu__tarifs {
+    &__tarifs {
     
     
         width: 20px;
@@ -717,7 +715,20 @@ body{
     
     }
     
-    .entrees__icon {
+    
+
+    }
+    
+    
+    
+    .entrees{
+        width: 100%;
+        height: 500px;
+        
+    
+    
+    
+    &__icon {
         width: 30px;
         height: 30px;
         opacity: 0;
@@ -729,38 +740,29 @@ body{
         }
     
     }
+
+
     
-    
-    
-    
-    
-    
-    
-    
-    .entrees__can {
+    &__can {
     
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
-        width: 430px;
+        width: 100%;
         height: 350px;
-        border: 2px solid red;
-        
-    
-    
-    
+
     
     }
     
     
-    .entrees__texte{
+    &__texte{
     
     
     
-        font-size: 10px;
+        font-size: 18px;
     }
     
-    .entrees__title {
+    &__title {
         width: 100%;
         flex-wrap: wrap;
         margin: 0;
@@ -773,7 +775,7 @@ body{
     
     
     
-    .entrees__filters {
+    &__filters {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -783,12 +785,12 @@ body{
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 20px;
-        border: 2px solid red;
+        
     
     
     }
     
-    .entrees__prix {
+    &__prix {
         
         border: 2px solid violet;
         width:60px;
@@ -800,7 +802,7 @@ body{
     }
     
     
-    .entrees__line {
+    &__line {
         width: 80px;
         border: 2px solid #99E2D0;
         height: 0px;
@@ -810,39 +812,41 @@ body{
     
     }
     
+
+    }
+    
+    .plats{
+        width: 100%;
+        height: 500px;
+        
     
     
-    .plats__can {
+    &__can {
     
         display: flex;
         flex-direction: column;
         margin: 0;
         margin-bottom: 20px;
-        width: 430px;
-        height: 350px;
-        border: 2px solid red;
-    
-    
-    
-    
+        width: 100%;
+        height: 380px;
     
     
     }
     
-    .plats__title {
+    &__title {
         width: 100%;
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
     
-    
-    
-    
+    }
+    &__texte{
+        font-size: 18px;
     }
     
     
     
-    .plats__filters {
+    &__filters {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -856,12 +860,12 @@ body{
     
     }
     
-    .plats__prix {
+    &__prix {
         margin-top: 26px;
     
     }
     
-    .plats__line {
+    &__line {
         width: 80px;
         border: 2px solid #99E2D0;
         height: 0px;
@@ -872,30 +876,40 @@ body{
     
     }
     
+
+    }
+
+    .Desserts{
+        width: 100%;
+        height: 500px;
+        background-color: #9356DC;
+        
     
-    .Desserts__can {
+    
+    
+    &__can {
     
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         margin: 0;
         width: 100%;
-        height: 350px;
-        border: 2px solid red;
+        height: 380px;
+        
     
     
     
     
     }
     
-    .Desserts__title {
-        width: 430px;
+    &__title {
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         margin: 0;
         padding: 0;
-        border: 2px solid red;
+        
         
     
     
@@ -904,7 +918,7 @@ body{
     
     }
     
-    .Desserts__line {
+    &__line {
         width: 80px;
         border: 2px solid #99E2D0;
         height: 0px;
@@ -914,10 +928,15 @@ body{
     
     
     }
+
+
+    &__texte{
+        font-size: 20px;
+    }
     
     
     
-    .Desserts__filters {
+    &__filters {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -930,27 +949,31 @@ body{
     
     }
     
-    .Desserts__prix {
+    &__prix {
         margin-top: 26px;
     
     
     }
     
+
+    }
     
-    footer {
     
-        width: 95%;
-        height: 400px;
+    .footer{
+        width: 100%;
+        height: 330px;
         background-color: rgb(67, 64, 64);
+
+    }
+    .footer__can{
+
         display: flex;
         flex-direction: column;
-        margin-top: -50px;
-        margin-left: 12px;
+        width: 100%;
+        height: 100%;
         
-       
-    
-    
-    
+        
+
     }
     
     
@@ -966,7 +989,7 @@ body{
     
     .footer__list {
         width: 80%;
-        height: 100px;
+        height: 50px;
     
         display: flex;
         align-items: center;
