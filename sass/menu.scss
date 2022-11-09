@@ -619,6 +619,15 @@ a {
                 height: 350px;
             }
 
+            &__canette{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                width: 100%;
+                height: 300px;
+                border: 2px solid red;
+            }
+
             &__texte {
                 font-size: 18px;
             }
