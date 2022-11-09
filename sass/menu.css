@@ -6,7 +6,7 @@ body {
 
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 30px;
+  font-weight: 400;
 }
 
 a {
@@ -98,8 +98,7 @@ a {
   background-color: #F2F2F2;
   margin-top: 0px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   position: relative;
   top: -50px;
@@ -127,11 +126,10 @@ a {
   background-color: #9356DC;
 }
 .entrees__can {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 20px;
   width: 450px;
   height: 500px;
+  border: 2px solid red;
 }
 .entrees__texte {
   font-size: 10px;
@@ -147,11 +145,12 @@ a {
   align-items: center;
   justify-content: space-around;
   width: 430px;
-  height: 150px;
+  height: 100px;
   border: 2px solid #F2F2F2;
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
+  background-color: #9356DC;
 }
 .entrees__prix {
   width: 60px;
@@ -401,19 +400,6 @@ a {
   .menu__titre {
     font-family: "Shrikhand", cursive;
   }
-  .menu__speciale {
-    width: 100%;
-    height: 1750px;
-    border-radius: 30px 30px 0 0;
-    background-color: #F2F2F2;
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -50px;
-  }
   .menu__tarifs {
     width: 20px;
     position: relative;
@@ -441,14 +427,6 @@ a {
     margin-bottom: 20px;
     width: 100%;
     height: 350px;
-  }
-  .entrees__canette {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 300px;
-    border: 2px solid red;
   }
   .entrees__texte {
     font-size: 18px;
