@@ -129,7 +129,6 @@ a {
   margin-bottom: 20px;
   width: 450px;
   height: 500px;
-  border: 2px solid red;
 }
 .entrees__texte {
   font-size: 10px;
@@ -150,7 +149,6 @@ a {
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
-  background-color: #9356DC;
 }
 .entrees__prix {
   width: 60px;
