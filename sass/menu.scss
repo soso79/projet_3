@@ -501,6 +501,16 @@ span{
 
     }
 
+    .animation{
+        width: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        
+    }
+
     .header__can {
         display: flex;
         align-items: center;
@@ -604,12 +614,16 @@ span{
             
 
         }
+        
+        
 
 
         &__texte {
+        
 
             font-size: 18px;
             font-weight: 400;
+            border: 2px solid red;
         
         }
 
@@ -633,6 +647,30 @@ span{
             box-shadow: 4px 4px 10px gray;
             margin-bottom: 20px;
             margin-left: 10px;
+            overflow: hidden;
+            
+
+            &:hover{
+                
+                .entrees__check{
+                    
+                    
+                    margin-right: 0;
+                    border-radius: 0 20px 20px 0;
+                    
+                    
+                }
+
+                .entrees__logo{
+                    transform: rotate(-360deg);
+                    transition: transform 400ms ease-in-out;
+                }
+            }
+
+
+
+
+
         }
 
         
@@ -647,8 +685,31 @@ span{
             margin-left: 10px;
         }
         &__prix{
+            width: 20%;
             font-family: 'Roboto',sans-serif;
             font-size: 15px;
+            margin-left: 60px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+        }
+        &__check{
+            
+            background-color: #99E2D0;
+            margin-right: -100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100%;
+            border: 2px solid red;
+            
+            
+            
+        }
+        &__logo{
+            font-size: 15px;
+            color: #F2F2F2;
         }
 
     }

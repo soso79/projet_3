@@ -369,6 +369,13 @@ a {
   .pink:hover {
     opacity: 1;
   }
+  .animation {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
   .header__can {
     display: flex;
     align-items: center;
@@ -451,6 +458,7 @@ a {
   .entrees__texte {
     font-size: 18px;
     font-weight: 400;
+    border: 2px solid red;
   }
   .entrees__title {
     width: 80%;
@@ -469,6 +477,15 @@ a {
     box-shadow: 4px 4px 10px gray;
     margin-bottom: 20px;
     margin-left: 10px;
+    overflow: hidden;
+  }
+  .entrees__filters:hover .entrees__check {
+    margin-right: 0;
+    border-radius: 0 20px 20px 0;
+  }
+  .entrees__filters:hover .entrees__logo {
+    transform: rotate(-360deg);
+    transition: transform 400ms ease-in-out;
   }
   .entrees__line {
     width: 40px;
@@ -479,8 +496,27 @@ a {
     margin-left: 10px;
   }
   .entrees__prix {
+    width: 20%;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
+    margin-left: 60px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+  }
+  .entrees__check {
+    background-color: #99E2D0;
+    margin-right: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+    border: 2px solid red;
+  }
+  .entrees__logo {
+    font-size: 15px;
+    color: #F2F2F2;
   }
   .plats {
     width: 100%;
