@@ -501,16 +501,7 @@ span{
 
     }
 
-    .animation{
-        width: 80px;
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        
-    }
-
+    
     .header__can {
         display: flex;
         align-items: center;
@@ -580,21 +571,6 @@ span{
         }
 
 
-
-        &__tarifs {
-            width: 20px;
-            position: relative;
-
-
-            &:hover {
-                opacity: 1;
-                left: -50px;
-            }
-
-        }
-
-
-
     }
     .restaurants__logo{
         margin-right: 25px;
@@ -623,9 +599,13 @@ span{
 
             font-size: 18px;
             font-weight: 400;
-            border: 2px solid red;
-        
+            width: 80%;
+            
+            
+            
         }
+
+        
 
         &__title {
             width: 80%;
@@ -649,14 +629,15 @@ span{
             margin-left: 10px;
             overflow: hidden;
             
+            
 
             &:hover{
                 
                 .entrees__check{
-                    
-                    
                     margin-right: 0;
                     border-radius: 0 20px 20px 0;
+                    transform: scale(1);
+                    transition: 300ms ease-out;
                     
                     
                 }
@@ -664,6 +645,10 @@ span{
                 .entrees__logo{
                     transform: rotate(-360deg);
                     transition: transform 400ms ease-in-out;
+                }
+                .entrees__prix{
+                    transform: translateX(-30%);
+                    transition: 400ms ease-in-out;
                 }
             }
 
@@ -692,6 +677,7 @@ span{
             border: 2px solid red;
             display: flex;
             justify-content: center;
+            margin-left: 60px;
         }
         &__check{
             
@@ -703,6 +689,7 @@ span{
             width: 100px;
             height: 100%;
             border: 2px solid red;
+            
             
             
             

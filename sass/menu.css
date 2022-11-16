@@ -369,13 +369,6 @@ a {
   .pink:hover {
     opacity: 1;
   }
-  .animation {
-    width: 80px;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
   .header__can {
     display: flex;
     align-items: center;
@@ -433,14 +426,6 @@ a {
   .menu__titre {
     font-family: "Shrikhand", cursive;
   }
-  .menu__tarifs {
-    width: 20px;
-    position: relative;
-  }
-  .menu__tarifs:hover {
-    opacity: 1;
-    left: -50px;
-  }
   .restaurants__logo {
     margin-right: 25px;
   }
@@ -458,7 +443,7 @@ a {
   .entrees__texte {
     font-size: 18px;
     font-weight: 400;
-    border: 2px solid red;
+    width: 80%;
   }
   .entrees__title {
     width: 80%;
@@ -482,10 +467,16 @@ a {
   .entrees__filters:hover .entrees__check {
     margin-right: 0;
     border-radius: 0 20px 20px 0;
+    transform: scale(1);
+    transition: 300ms ease-out;
   }
   .entrees__filters:hover .entrees__logo {
     transform: rotate(-360deg);
     transition: transform 400ms ease-in-out;
+  }
+  .entrees__filters:hover .entrees__prix {
+    transform: translateX(-30%);
+    transition: 400ms ease-in-out;
   }
   .entrees__line {
     width: 40px;
@@ -503,6 +494,7 @@ a {
     border: 2px solid red;
     display: flex;
     justify-content: center;
+    margin-left: 60px;
   }
   .entrees__check {
     background-color: #99E2D0;
