@@ -467,8 +467,9 @@ a {
   .entrees__filters:hover .entrees__check {
     margin-right: 0;
     border-radius: 0 20px 20px 0;
-    transform: scale(1);
-    transition: 300ms ease-out;
+    transform-origin: right;
+    transform: scaleX(1);
+    transition: transform 1000ms;
   }
   .entrees__filters:hover .entrees__logo {
     transform: rotate(-360deg);
@@ -491,7 +492,6 @@ a {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     margin-left: 60px;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     margin-left: 60px;
@@ -504,7 +504,7 @@ a {
     justify-content: center;
     width: 100px;
     height: 100%;
-    border: 2px solid red;
+    transform: scaleX(0);
   }
   .entrees__logo {
     font-size: 15px;
