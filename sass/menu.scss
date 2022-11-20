@@ -575,6 +575,15 @@ span{
     .restaurants__logo{
         margin-right: 25px;
     }
+    .round{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: white;
+    }
 
     .entrees {
         width: 100%;
@@ -636,9 +645,9 @@ span{
                 .entrees__check{
                     margin-right: 0;
                     border-radius: 0 20px 20px 0;
-                    transform-origin: right;
+                    transform-origin: right ;
                     transform: scaleX(1);
-                    transition: transform 800ms ;
+                    transition: transform 1000ms;
                     
                     
                     
@@ -650,7 +659,7 @@ span{
                 }
                 .entrees__prix{
                     transform: translateX(-30%);
-                    transition: 400ms ease-in-out;
+                    transition: 400ms ease-in;
                 }
             }
 
@@ -690,6 +699,8 @@ span{
             width: 100px;
             height: 100%;
             transform: scaleX(0);
+            transition: 2000ms;
+            
             
             
             
@@ -697,8 +708,8 @@ span{
             
         }
         &__logo{
-            font-size: 15px;
-            color: #F2F2F2;
+            font-size: 20px;
+            color: #99E2D0;
         }
 
     }
