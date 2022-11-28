@@ -163,6 +163,7 @@ a {
 .entrees {
     width: 50%;
     height: 500px;
+    
 
     &__icon {
         width: 60px;
@@ -212,6 +213,11 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
+        transform-origin: top;
+    transform: scaleX(1);
+    transition: 2500ms ease-in-out;
+    animation: fadein 10s;
+
     }
 
 
@@ -230,6 +236,14 @@ a {
     }
 
 
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 
@@ -673,7 +687,7 @@ span{
                 }
                 .entrees__prix{
                     transform: translateX(-30%);
-                    transition: 400ms ease-in;
+                    transition:  transform 400ms ease-in;
                 }
             }
 

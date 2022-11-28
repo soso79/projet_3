@@ -166,6 +166,11 @@ a {
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
+  transform-origin: top;
+  transform: scaleX(1);
+  transition: 2500ms ease-in-out;
+  -webkit-animation: fadein 10s;
+          animation: fadein 10s;
 }
 .entrees__line {
   width: 80px;
@@ -178,6 +183,23 @@ a {
   margin-right: 25px;
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .plats {
   width: 50%;
   height: 500px;
@@ -501,7 +523,7 @@ a {
   }
   .entrees__filters:hover .entrees__prix {
     transform: translateX(-30%);
-    transition: 400ms ease-in;
+    transition: transform 400ms ease-in;
   }
   .entrees__line {
     width: 40px;
