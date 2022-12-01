@@ -213,10 +213,13 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
-        transform-origin: top;
-    transform: scaleX(1);
-    transition: 2500ms ease-in-out;
-    animation: fadein 10s;
+        transform: scaleY(1);
+
+    transition: 250ms ease-in-out;
+    animation: apparition ;
+    animation-duration: 5s;
+    
+    
 
     }
 
@@ -237,11 +240,33 @@ a {
 
 
 }
-@keyframes fadein{
-    from{
+
+
+@for $i from 1 through 10
+{
+
+    .delay_#{$i}{
+     
+        animation-delay: 300ms * $i;
+
+    }
+    
+}
+
+
+
+
+
+
+
+@keyframes apparition{
+
+    0%{
+        transform: translateY(-100px);
         opacity: 0;
     }
-    to{
+    100%{
+        transform: translateY(0px);
         opacity: 1;
     }
 }
@@ -284,6 +309,11 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
+        
+
+    transition: 250ms ease-in-out;
+    animation: apparition ;
+    animation-duration: 5s;
     }
 
     &__prix {

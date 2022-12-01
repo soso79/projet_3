@@ -166,11 +166,12 @@ a {
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
-  transform-origin: top;
-  transform: scaleX(1);
-  transition: 2500ms ease-in-out;
-  -webkit-animation: fadein 10s;
-          animation: fadein 10s;
+  transform: scaleY(1);
+  transition: 250ms ease-in-out;
+  -webkit-animation: apparition;
+          animation: apparition;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 .entrees__line {
   width: 80px;
@@ -183,20 +184,74 @@ a {
   margin-right: 25px;
 }
 
-@-webkit-keyframes fadein {
-  from {
+.delay_1 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.delay_2 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.delay_3 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.delay_4 {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.delay_5 {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.delay_6 {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
+.delay_7 {
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
+}
+
+.delay_8 {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+}
+
+.delay_9 {
+  -webkit-animation-delay: 2700ms;
+          animation-delay: 2700ms;
+}
+
+.delay_10 {
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    transform: translateY(-100px);
     opacity: 0;
   }
-  to {
+  100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
 
-@keyframes fadein {
-  from {
+@keyframes apparition {
+  0% {
+    transform: translateY(-100px);
     opacity: 0;
   }
-  to {
+  100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
@@ -231,6 +286,11 @@ a {
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
+  transition: 250ms ease-in-out;
+  -webkit-animation: apparition;
+          animation: apparition;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 .plats__prix {
   margin-top: 26px;
