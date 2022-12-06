@@ -29,7 +29,7 @@ a {
   position: relative;
   right: -35px;
 }
-.black:hover {
+.black:active {
   opacity: 0;
 }
 
@@ -37,7 +37,7 @@ a {
   width: 30px;
   opacity: 0;
 }
-.pink:hover {
+.pink:active {
   opacity: 1;
 }
 
@@ -236,7 +236,7 @@ a {
 
 @-webkit-keyframes apparition {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
@@ -247,7 +247,7 @@ a {
 
 @keyframes apparition {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
@@ -446,20 +446,59 @@ a {
   a {
     text-decoration: none;
   }
-  .black {
+  black {
     width: 30px;
     position: relative;
     right: -35px;
   }
-  .black:hover {
-    opacity: 0;
+  black:active {
+    opacity: 1;
   }
   .pink {
     width: 30px;
     opacity: 0;
   }
-  .pink:hover {
+  .pink:active {
     opacity: 1;
+    -webkit-animation-name: progress-heart;
+            animation-name: progress-heart;
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+    transition: 1500ms cubic-bezier(0, 0.75, 0.08, 1);
+  }
+  @-webkit-keyframes progress-heart {
+    0% {
+      transform: scaleY(0);
+    }
+    25% {
+      transform: scaleY(0.3);
+    }
+    50% {
+      transform: scaleY(0.5);
+    }
+    75% {
+      transform: scaleY(0.7);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  @keyframes progress-heart {
+    0% {
+      transform: scaleY(0);
+    }
+    25% {
+      transform: scaleY(0.3);
+    }
+    50% {
+      transform: scaleY(0.5);
+    }
+    75% {
+      transform: scaleY(0.7);
+    }
+    100% {
+      transform: scaleY(1);
+    }
   }
   .header__can {
     display: flex;

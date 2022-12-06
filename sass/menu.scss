@@ -37,7 +37,7 @@ a {
     position: relative;
     right: -35px;
 
-    &:hover {
+    &:active {
         opacity: 0;
     }
 
@@ -47,7 +47,7 @@ a {
     width: 30px;
     opacity: 0;
 
-    &:hover {
+    &:active {
         opacity: 1;
     }
 
@@ -529,17 +529,16 @@ span{
     a {
         text-decoration: none;
     }
-
-
-    .black {
+    black {
 
 
         width: 30px;
         position: relative;
         right: -35px;
 
-        &:hover {
-            opacity: 0;
+        &:active {
+            opacity: 1;
+            
         }
 
     }
@@ -548,12 +547,37 @@ span{
         width: 30px;
         opacity: 0;
 
-        &:hover {
+        &:active {
             opacity: 1;
+            animation-name: progress-heart;
+            animation-duration: 1000ms ;
+            transition:  1500ms cubic-bezier(0, .75, .08, 1);
         }
 
     }
 
+
+    @keyframes progress-heart {
+        0%{
+            transform: scaleY(0);
+        }
+        25%{
+            transform: scaleY(.3);
+        }
+        50%{
+            transform: scaleY(.5);
+        }
+        75%{
+            transform: scaleY(.7);
+        }
+        100%{
+            transform: scaleY(1);
+        }
+        
+    }
+
+
+    
     
     .header__can {
         display: flex;
