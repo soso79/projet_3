@@ -462,9 +462,9 @@ a {
     opacity: 1;
     -webkit-animation-name: progress-heart;
             animation-name: progress-heart;
-    -webkit-animation-duration: 1000ms;
-            animation-duration: 1000ms;
-    transition: 1500ms cubic-bezier(0, 0.75, 0.08, 1);
+    -webkit-animation-duration: 1000ms infinite;
+            animation-duration: 1000ms infinite;
+    transition: 1500ms;
   }
   @-webkit-keyframes progress-heart {
     0% {

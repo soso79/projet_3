@@ -550,8 +550,8 @@ span{
         &:active {
             opacity: 1;
             animation-name: progress-heart;
-            animation-duration: 1000ms ;
-            transition:  1500ms cubic-bezier(0, .75, .08, 1);
+            animation-duration: 1000ms infinite;
+            transition:  1500ms ;
         }
 
     }
