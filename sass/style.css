@@ -10,7 +10,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid blue;
   position: fixed;
   background-color: #e6e6e6;
   -webkit-animation: apparition 3s forwards;
@@ -48,11 +47,11 @@ body {
   width: 64px;
   height: 64px;
   margin: 8px;
-  border: 8px solid aqua;
+  border: 8px solid #FF79DA;
   border-radius: 50%;
   -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
           animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: aqua transparent transparent transparent;
+  border-color: #9356DC transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
@@ -217,6 +216,9 @@ a {
   margin-right: 30px;
   font-size: 30px;
 }
+.fonction__logo:hover {
+  background-color: #9356DC;
+}
 .fonction__round {
   display: flex;
   align-items: center;
@@ -237,11 +239,11 @@ a {
 }
 
 .fonction__filters:hover {
-  background-color: #e8dbf9;
+  background-color: red;
 }
 
 .fonction__icon:hover {
-  color: #9356DC;
+  background-color: #9356DC;
 }
 
 .restaurants {
@@ -504,12 +506,6 @@ h2 {
   }
   .fonction__texte {
     margin-right: 70px;
-  }
-  .fonction__filters:hover {
-    background-color: #e8dbf9;
-  }
-  .fonction__icon:hover {
-    color: #9356DC;
   }
   .restaurants {
     display: flex;
