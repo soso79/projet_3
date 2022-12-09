@@ -393,7 +393,7 @@ span{
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 20px;
         animation: apparition  5s;
-        animation-delay: 1.2s;
+        animation-delay: 1.5s;
         animation-fill-mode: forwards;
         opacity: 0;
         
@@ -545,10 +545,12 @@ span{
         &:active {
             opacity: 1;
             animation-name: progress-heart;
+            animation-fill-mode: forwards;
             animation-duration: 1000ms infinite;
-            transition:  1500ms ;
+            transition:  1500ms ease-in ;
             
         }
+        
 
     }
 

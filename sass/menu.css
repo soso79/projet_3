@@ -310,8 +310,8 @@ a {
   margin-bottom: 20px;
   -webkit-animation: apparition 5s;
           animation: apparition 5s;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
@@ -417,9 +417,11 @@ a {
     opacity: 1;
     -webkit-animation-name: progress-heart;
             animation-name: progress-heart;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     -webkit-animation-duration: 1000ms infinite;
             animation-duration: 1000ms infinite;
-    transition: 1500ms;
+    transition: 1500ms ease-in;
   }
   @-webkit-keyframes progress-heart {
     0% {
