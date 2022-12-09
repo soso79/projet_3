@@ -680,7 +680,7 @@ span{
 
         &__texte {
         
-
+            
             font-size: 18px;
             font-weight: 400;
             min-width: 60%;
@@ -706,6 +706,7 @@ span{
         }
 
         &__filters {
+            
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -741,6 +742,14 @@ span{
                     transform: translateX(-30%);
                     transition:  transform 400ms ease-in;
                 }
+                .entrees__texte{
+                    background-color: #9356DC;
+                    max-width: 40%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    
+                }
             }
 
 
@@ -764,6 +773,8 @@ span{
             width: 20%;
             font-family: 'Roboto',sans-serif;
             font-size: 15px;
+            
+            
     
             display: flex;
             justify-content: center;
