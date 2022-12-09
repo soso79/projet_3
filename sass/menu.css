@@ -166,12 +166,8 @@ a {
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
-  transform: scaleY(1);
-  transition: 250ms ease-in-out;
-  -webkit-animation: apparition;
-          animation: apparition;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation: apparition 5s;
+          animation: apparition 5s;
 }
 .entrees__line {
   width: 80px;
@@ -184,59 +180,9 @@ a {
   margin-right: 25px;
 }
 
-.delay_1 {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
-}
-
-.delay_2 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-
-.delay_3 {
-  -webkit-animation-delay: 900ms;
-          animation-delay: 900ms;
-}
-
-.delay_4 {
-  -webkit-animation-delay: 1200ms;
-          animation-delay: 1200ms;
-}
-
-.delay_5 {
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
-}
-
-.delay_6 {
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms;
-}
-
-.delay_7 {
-  -webkit-animation-delay: 2100ms;
-          animation-delay: 2100ms;
-}
-
-.delay_8 {
-  -webkit-animation-delay: 2400ms;
-          animation-delay: 2400ms;
-}
-
-.delay_9 {
-  -webkit-animation-delay: 2700ms;
-          animation-delay: 2700ms;
-}
-
-.delay_10 {
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
-}
-
 @-webkit-keyframes apparition {
   0% {
-    transform: translateY(100px);
+    transform: translateY(-100px);
     opacity: 0;
   }
   100% {
@@ -247,7 +193,7 @@ a {
 
 @keyframes apparition {
   0% {
-    transform: translateY(100px);
+    transform: translateY(-100px);
     opacity: 0;
   }
   100% {
@@ -286,11 +232,13 @@ a {
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
-  transition: 250ms ease-in-out;
-  -webkit-animation: apparition;
-          animation: apparition;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation: apparition 5s;
+          animation: apparition 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 .plats__prix {
   margin-top: 26px;
@@ -360,6 +308,13 @@ a {
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 20px;
+  -webkit-animation: apparition 5s;
+          animation: apparition 5s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 .Desserts__prix {
   margin-top: 26px;
@@ -609,18 +564,18 @@ a {
     margin-left: 10px;
     overflow: hidden;
   }
-  .entrees__filters:hover .entrees__check {
+  .entrees__filters:active .entrees__check {
     margin-right: 0;
     border-radius: 0 20px 20px 0;
     transform-origin: right;
     transform: scaleX(1);
     transition: transform 1000ms;
   }
-  .entrees__filters:hover .entrees__logo {
+  .entrees__filters:active .entrees__logo {
     transform: rotate(-360deg);
     transition: transform 1200ms ease-in-out;
   }
-  .entrees__filters:hover .entrees__prix {
+  .entrees__filters:active .entrees__prix {
     transform: translateX(-30%);
     transition: transform 400ms ease-in;
   }

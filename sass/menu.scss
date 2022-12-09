@@ -213,11 +213,8 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
-        transform: scaleY(1);
-
-    transition: 250ms ease-in-out;
-    animation: apparition ;
-    animation-duration: 5s;
+       animation: apparition 5s ;
+    
     
     
 
@@ -242,27 +239,12 @@ a {
 }
 
 
-@for $i from 1 through 10
-{
-
-    .delay_#{$i}{
-     
-        animation-delay: 300ms * $i;
-
-    }
-    
-}
-
-
-
-
-
 
 
 @keyframes apparition{
 
     0%{
-        transform: translateY(100px);
+        transform: translateY(-100px);
         opacity: 0;
     }
     100%{
@@ -309,11 +291,18 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
+        animation: apparition  5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
         
-
-    transition: 250ms ease-in-out;
-    animation: apparition ;
-    animation-duration: 5s;
+    
+        
+        
+        
+    
+    
+    
     }
 
     &__prix {
@@ -403,6 +392,12 @@ span{
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 20px;
+        animation: apparition  5s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        
+        
     }
 
     &__prix {
@@ -552,6 +547,7 @@ span{
             animation-name: progress-heart;
             animation-duration: 1000ms infinite;
             transition:  1500ms ;
+            
         }
 
     }
@@ -722,7 +718,7 @@ span{
             
             
 
-            &:hover{
+            &:active{
                 
                 .entrees__check{
                     margin-right: 0;
