@@ -17,20 +17,30 @@ body {
 }
 
 @-webkit-keyframes apparition {
+  0% {
+    z-index: 1;
+  }
   99% {
     opacity: 0.8;
+    z-index: 1;
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 
 @keyframes apparition {
+  0% {
+    z-index: 1;
+  }
   99% {
     opacity: 0.8;
+    z-index: 1;
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 .lds-ring {
