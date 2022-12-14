@@ -1,9 +1,26 @@
 body {
-  margin: 0px;
+  margin: auto;
   padding: 0px;
-  max-width: 1400px;
+  width: 100%;
 }
 
+@-webkit-keyframes petit_coeur {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes petit_coeur {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
 .loader {
   width: 100%;
   height: 100%;
@@ -341,6 +358,8 @@ a {
   opacity: 0;
 }
 .pink:hover {
+  -webkit-animation: petit_coeur 3s;
+          animation: petit_coeur 3s;
   opacity: 1;
 }
 
@@ -589,15 +608,15 @@ h2 {
   }
   .black {
     width: 30px;
-    position: relative;
-    right: -30px;
+    right: -31px;
   }
   .black:hover {
     opacity: 0;
   }
   .pink {
-    width: 30px;
+    width: 32px;
     opacity: 0;
+    position: relative;
   }
   .pink:hover {
     opacity: 1;

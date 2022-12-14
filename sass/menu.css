@@ -1,31 +1,10 @@
 @charset "UTF-8";
 body {
-  margin: 0px;
+  margin: auto;
   padding: 0px;
-  max-width: 1400px;
+  width: 100%;
 }
 
-@-webkit-keyframes apparition {
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes apparition {
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 span {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -153,6 +132,26 @@ a {
 .entrees {
   width: 50%;
   height: 500px;
+}
+@-webkit-keyframes apparition {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .entrees__icon {
   width: 60px;
@@ -295,11 +294,11 @@ a {
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
   -webkit-animation: apparition 5s;
           animation: apparition 5s;
   overflow: hidden;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .plats__filters:active .plats__check {
   margin-right: 0;

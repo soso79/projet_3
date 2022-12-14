@@ -1,26 +1,16 @@
 body {
 
-    margin: 0px;
+    margin: auto;
     padding: 0px;
-    max-width: 1400px;
+    width: 100%;
+    
 
 
 }
 
 
 
-@keyframes apparition {
 
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
 
 span {
 
@@ -185,6 +175,21 @@ a {
     height: 500px;
 
 
+
+    @keyframes apparition {
+
+        0% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+
     &__icon {
         width: 60px;
         height: 60px;
@@ -195,6 +200,7 @@ a {
         margin-bottom: 20px;
         width: 450px;
         height: 500px;
+        
     }
 
     &__line {
@@ -382,9 +388,12 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
-        animation-delay: 5s;
         animation: apparition 5s;
+        
+        
         overflow: hidden;
+        animation-fill-mode: forwards;
+        
         
 
 
