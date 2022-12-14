@@ -171,8 +171,9 @@ a {
 
 
 .entrees {
-    width: 50%;
+    width: 40%;
     height: 500px;
+    
 
 
 
@@ -216,7 +217,7 @@ a {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         margin-left: 10px;
-        border: 2px solid red;
+        
 
 
 
@@ -273,7 +274,7 @@ a {
             }
 
             .entrees__texte {
-                background-color: #9356DC;
+                
                 max-width: 40%;
                 text-overflow: ellipsis;
                 overflow: hidden;
@@ -296,7 +297,6 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid red;
         margin-right: -10px;
 
 
@@ -315,7 +315,7 @@ a {
         height: 100px;
         transform: scaleX(0);
         transition: .5s;
-        border: 2px solid red;
+        
 
 
     }
@@ -335,8 +335,10 @@ a {
 
 
 .plats {
-    width: 50%;
+    width: 40%;
     height: 500px;
+    
+    
 
 
     &__can {
@@ -373,7 +375,7 @@ a {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         margin-left: 10px;
-        border: 2px solid red;
+        
 
 
     }
@@ -423,7 +425,7 @@ a {
             }
 
             .plats__texte {
-                background-color: #9356DC;
+                
                 max-width: 40%;
                 text-overflow: ellipsis;
                 overflow: hidden;
@@ -446,7 +448,6 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid red;
         margin-right: -10px;
 
 
@@ -465,7 +466,7 @@ a {
         height: 100px;
         transform: scaleX(0);
         transition: .5s;
-        border: 2px solid red;
+        
 
 
     }
@@ -523,7 +524,7 @@ a {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         margin-left: 10px;
-        border: 2px solid red;
+        
 
 
     }
@@ -580,7 +581,7 @@ a {
             }
 
             .Desserts__texte {
-                background-color: #9356DC;
+                
                 max-width: 40%;
                 text-overflow: ellipsis;
                 overflow: hidden;
@@ -603,7 +604,6 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid red;
         margin-right: -10px;
 
 
@@ -622,7 +622,7 @@ a {
         height: 100%;
         transform: scaleX(0);
         transition: .5s;
-        border: 2px solid red;
+        
 
 
     }
@@ -745,7 +745,7 @@ a {
         text-decoration: none;
     }
 
-    black {
+    .black {
 
 
         width: 30px;
@@ -920,7 +920,6 @@ a {
             font-size: 18px;
             font-weight: 400;
             width: 80%;
-            border: 2px solid red;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
@@ -982,7 +981,7 @@ a {
                 }
 
                 .entrees__texte {
-                    background-color: #9356DC;
+                    
                     max-width: 40%;
                     text-overflow: ellipsis;
                     overflow: hidden;
@@ -1005,7 +1004,6 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid red;
             margin-right: -10px;
 
 
@@ -1023,7 +1021,7 @@ a {
             height: 100px;
             transform: scaleX(0);
             transition: .5s;
-            border: 2px solid red;
+            
 
 
         }
@@ -1109,7 +1107,7 @@ a {
                 }
 
                 .plats__texte {
-                    background-color: #9356DC;
+                    
                     max-width: 40%;
                     text-overflow: ellipsis;
                     overflow: hidden;
@@ -1132,7 +1130,7 @@ a {
             height: 100px;
             transform: scaleX(0);
             transition: .5s;
-            border: 2px solid red;
+            
 
 
         }
@@ -1149,7 +1147,6 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid red;
             margin-right: -10px;
 
 
@@ -1179,7 +1176,7 @@ a {
             justify-content: flex-start;
             margin-right: 50px;
             padding: 0;
-            border: 2px solid red;
+            
 
         }
 
@@ -1236,7 +1233,7 @@ a {
                 }
 
                 .Desserts__texte {
-                    background-color: #9356DC;
+                    
                     max-width: 40%;
                     text-overflow: ellipsis;
                     overflow: hidden;
@@ -1259,7 +1256,7 @@ a {
             height: 100px;
             transform: scaleX(0);
             transition: .5s;
-            border: 2px solid red;
+            
 
 
         }
@@ -1276,7 +1273,6 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid red;
             margin-right: -10px;
 
 
