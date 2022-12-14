@@ -382,9 +382,10 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
+        animation-delay: .5s;
         animation: apparition 5s;
         overflow: hidden;
-        animation-delay: 1s;
+        
 
 
 
@@ -609,7 +610,7 @@ a {
         align-items: center;
         justify-content: center;
         width: 100px;
-        height: 100px;
+        height: 100%;
         transform: scaleX(0);
         transition: .5s;
         border: 2px solid red;
@@ -1071,6 +1072,7 @@ a {
             margin-bottom: 20px;
             margin-left: 10px;
             overflow: hidden;
+            
 
 
             &:active {
