@@ -382,7 +382,7 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
-        animation-delay: .5s;
+        animation-delay: 5s;
         animation: apparition 5s;
         overflow: hidden;
         
@@ -945,6 +945,7 @@ a {
             margin-bottom: 20px;
             margin-left: 10px;
             overflow: hidden;
+            
 
 
 
@@ -1072,7 +1073,7 @@ a {
             margin-bottom: 20px;
             margin-left: 10px;
             overflow: hidden;
-            
+            animation-delay: 30ms;
 
 
             &:active {
@@ -1166,8 +1167,10 @@ a {
         &__title {
             width: 80%;
             flex-wrap: wrap;
-            margin-left: 10px;
+            justify-content: flex-start;
+            margin-right: 50px;
             padding: 0;
+            border: 2px solid red;
 
         }
 
@@ -1178,7 +1181,8 @@ a {
             height: 0px;
             margin-top: 5px;
             margin-bottom: 15px;
-            margin-left: 10px;
+            margin-right: 400px;
+            
         }
 
         &__texte {

@@ -295,8 +295,8 @@ a {
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation: apparition 5s;
           animation: apparition 5s;
   overflow: hidden;
@@ -802,6 +802,8 @@ a {
     margin-bottom: 20px;
     margin-left: 10px;
     overflow: hidden;
+    -webkit-animation-delay: 30ms;
+            animation-delay: 30ms;
   }
   .plats__filters:active .plats__check {
     margin-right: 0;
@@ -867,8 +869,10 @@ a {
   .Desserts__title {
     width: 80%;
     flex-wrap: wrap;
-    margin-left: 10px;
+    justify-content: flex-start;
+    margin-right: 50px;
     padding: 0;
+    border: 2px solid red;
   }
   .Desserts__line {
     width: 40px;
@@ -876,7 +880,7 @@ a {
     height: 0px;
     margin-top: 5px;
     margin-bottom: 15px;
-    margin-left: 10px;
+    margin-right: 400px;
   }
   .Desserts__texte {
     font-size: 18px;
