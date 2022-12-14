@@ -295,11 +295,11 @@ a {
   border-radius: 25px;
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
   -webkit-animation: apparition 5s;
           animation: apparition 5s;
   overflow: hidden;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 .plats__filters:active .plats__check {
   margin-right: 0;
@@ -453,7 +453,7 @@ a {
   align-items: center;
   justify-content: center;
   width: 100px;
-  height: 100px;
+  height: 100%;
   transform: scaleX(0);
   transition: 0.5s;
   border: 2px solid red;
