@@ -3,58 +3,60 @@ body {
     margin: auto;
     padding: 0px;
     width: 100%;
-    
-    
-    
 }
-@keyframes petit_coeur{
-    0%{
+
+/* ici nous avons creé l animation qui permet de faire grossir le coeur */
+
+@keyframes petit_coeur {
+    0% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(1.5);
     }
 }
 
-
-
-
-
-
-.loader{
+/*on determine ici la taille du loader etc le temps d animation et l animation qui sera utilisé*/
+.loader {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: fixed;
     background-color: #e6e6e6;
     animation: apparition 3s forwards;
 }
-@keyframes apparition{
-    
-0%{
-    z-index: 1;
-}
-    
-    99%{
+
+/* ici nous créons l animation apparition afin qu il apparaisse progressivement et  la propriété z-index pour laisser transparaitre la couche loader*/
+@keyframes apparition {
+
+    0% {
+        z-index: 1;
+    }
+
+    99% {
         opacity: 0.8;
         z-index: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
         z-index: -1;
     }
 }
 
+/*ici commence toute la partie du loader , d abord on donne la forme souhaitée*/
 .lds-ring {
     display: inline-block;
     position: relative;
     width: 80px;
     height: 80px;
-  }
-  .lds-ring div {
+}
+
+/*ici on crée une div dans la quelle on va attribuer les propriétés pour que cela s anime*/
+.lds-ring div {
     box-sizing: border-box;
     display: block;
     position: absolute;
@@ -65,53 +67,48 @@ body {
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: #9356DC transparent transparent transparent;
-  }
-  .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-  .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-  .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
-  }
-  @keyframes lds-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
+}
 
-#haut{
+/*ici on crée des div enfants afin de créer un effet visuel de décalage*/
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+/*ici on crée l animation qui permet grace a la propriété rotate de faire tourner a 360degrés*/
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#haut {
     width: 100%;
     height: 500px;
-    
-
 }
 
 
-#middle{
+#middle {
     width: 100%;
     height: 600px;
-    
-    
 }
 
-#bas{
+#bas {
     width: 100%;
     height: 1200px;
-    
-    
-    
 }
-
-
-
-
 
 header {
     display: flex;
@@ -119,10 +116,6 @@ header {
     align-items: center;
     width: 100%;
     height: 60px;
-    
-
-
-
 }
 
 #logo {
@@ -135,24 +128,19 @@ h1,
 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
-    
-
-
 }
-
 
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 23px;
 }
 
-
-
 a {
     text-decoration: none;
     color: black;
 }
 
+/* ici nous utilisons display flex afin de répondre au design souhaité*/
 .recherche {
     display: flex;
     justify-content: center;
@@ -160,23 +148,11 @@ a {
     width: 100%;
     height: 80px;
     background-color: #e6e6e6;
-    box-shadow: 20px, 0, 0, 0 ;
-
-
-
-
-
+    box-shadow: 20px, 0, 0, 0;
 
     &__can {
-
-
         display: flex;
         justify-content: space-between;
-        
-
-
-
-
     }
 
     &__barre {
@@ -185,15 +161,7 @@ a {
         text-decoration: none;
         border: none;
         background: none;
-        
-
-
-
-
     }
-
-
-
 }
 
 .reservation {
@@ -205,10 +173,8 @@ a {
     width: 100%;
     height: 450px;
     background-color: rgb(243, 243, 243);
-    
 
-
-
+    /*ici la mise en forme du bouton*/
     &__bouton {
         width: 300px;
         height: 72px;
@@ -219,13 +185,7 @@ a {
     }
 
     &__slogan {
-
-
         font-family: 'Roboto', sans-serif;
-
-
-
-
     }
 
 }
@@ -239,43 +199,24 @@ a {
     height: 620px;
     display: flex;
     flex-wrap: wrap;
-    
-
-
-
 
     &__title {
-
-
         width: 100%;
         height: 50px;
         margin-top: 80px;
         margin-left: 25px;
-        
-
-
-
-
     }
 
     &__can {
-
-
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
         height: 75%;
         align-items: center;
-        
-
-
-
-
-
-
     }
 
+    /*ici on donne forme au filtre et on configure le survol en lui donnant un background et en augmentant l effet d ombre*/
     &__filters {
         display: flex;
         align-items: center;
@@ -285,16 +226,11 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
-        &:hover{
+
+        &:hover {
             background-color: #cda8f9;
             box-shadow: 10px 10px 12px gray;
         }
-
-
-
-
-
-
     }
 
     &__logo {
@@ -306,14 +242,9 @@ a {
         color: gray;
         margin-right: 30px;
         font-size: 30px;
-        
-        
-
-
-
-
     }
 
+    /*ici on a la partie qui contient le chiffre dans le rond violet*/
     &__round {
         display: flex;
         align-items: center;
@@ -324,8 +255,6 @@ a {
         background-color: #9356DC;
         position: relative;
         right: 20px;
-
-
     }
 
     &__numbers {
@@ -337,17 +266,16 @@ a {
         margin-right: 70px;
 
     }
-    &__icon{
-        &:hover{
+
+    /*ici on configure le survol de l con*/
+    &__icon {
+        &:hover {
             color: #9356DC;
         }
     }
 
 
 }
-
-
-
 
 .restaurants {
     display: flex;
@@ -356,23 +284,15 @@ a {
     width: 100%;
     height: 1200px;
     background-color: #F2F2F2;
-    
-
-
-    
-
-
 
     &__images {
         width: 100%;
         height: 270px;
         object-fit: cover;
         border-radius: 10px 10px 0px 0px;
-
-
-
     }
 
+    /*ici on configure chaque vignette */
     &__items {
         width: 500px;
         height: 350px;
@@ -380,22 +300,14 @@ a {
         border-radius: 20px;
         margin-bottom: 30px;
         position: relative;
-        
-
-        
-        
-
-
-
     }
 
     &__title {
         width: 90%;
         height: 50px;
-        
-
     }
 
+    /*on utilise la police roboto*/
     &__texte {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
@@ -404,6 +316,7 @@ a {
         margin-left: 15px;
     }
 
+    /* ici on defini la taille du coeur présent dans la vignette*/
     &__hearts {
         width: 50px;
         height: 50px;
@@ -416,16 +329,9 @@ a {
         align-items: center;
         width: 100%;
         height: 80px;
-        
-
-
-
-
-
     }
 
     &__logo {
-
         width: 50px;
         height: 50px;
         display: flex;
@@ -446,21 +352,16 @@ a {
         right: +10px;
         top: +20px;
         border-radius: 4px;
-
-
     }
 
     &__nouveau {
         color: #3ca288;
         font-size: 20px;
     }
-
-
 }
 
+/*ici on configure les coeurs pour qu ils se superposent et que le rose  apparait au survol*/
 .black {
-
-
     width: 30px;
     position: relative;
     right: -30px;
@@ -477,8 +378,6 @@ a {
 
     &:hover {
         animation: petit_coeur 3s;
-        
-
         opacity: 1;
     }
 
@@ -486,308 +385,105 @@ a {
 
 
 .footer {
-
     width: 100%;
     height: 400px;
     background-color: rgb(67, 64, 64);
     display: flex;
     flex-direction: column;
     margin-top: -50px;
-    
 
+    &__title {
+        width: 80%;
+        margin-left: 20px;
+    }
 
+    &__list {
+        width: 80%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
 
+    &__content {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
 
+    &__logo {
+        width: 100%;
+        height: 50px;
+        font-family: 'Shrikhand', cursive;
+        color: white;
+    }
 
-&__title {
+    &__texte {
 
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
 
-    width: 80%;
-    margin-left: 20px;
-    
-
-
-}
-
-&__list {
-    width: 80%;
-    height: 100px;
-
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-
-
-
-
-
-}
-
-&__content {
-
-
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-
-
-
-
-}
-
-&__logo {
-    width: 100%;
-    height: 50px;
-    font-family: 'Shrikhand', cursive;
-    color: white;
+    &__link {
+        color: white;
+    }
 
 
 }
 
-&__texte {
+/* ici quelques régles pour la partie tablette de notre site*/
 
-    font-family: 'Roboto', sans-serif;
-    color: white;
+@media screen and (max-width:992px) {
+    .restaurants {
 
-}
-
-&__link {
-    color: white;
-}
-
-
-}
-
-@media screen and (max-width:992px){
-    .restaurants{
-        
         display: flex;
         justify-content: space-around;
-    
-    &__items{
-        width: 350px;
-    }
-    
+
+        &__items {
+            width: 350px;
+        }
+
 
     }
 }
 
 
-
+/*ici commence la partie mobile  du site*/
 
 @media screen and (max-width:768px) {
 
 
-    #bas{
+    #bas {
         height: 1850px;
     }
 
 
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 60px;
-
-
-
-    }
-
-    #logo {
-
-        font-family: 'Shrikhand', cursive;
-        font-size: 42px;
-    }
-
-    h1,
-    h2 {
-        font-family: 'Roboto', sans-serif;
-        font-size: 36px;
-
-    }
-
-
-    p {
-        font-family: 'Roboto', sans-serif;
-        font-size: 23px;
-    }
-
-
-
-    a {
-        text-decoration: none;
-    }
-
-    .recherche {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 80px;
-
-        background-color: #e6e6e6;
-        box-shadow: 20px, 0, 0, 0 ;
-
-
-
-
-
-
-        &__can {
-
-
-            display: flex;
-            justify-content: space-between;
-
-
-
-        }
-
-        &__barre {
-            width: 260px;
-            margin-left: 30px;
-
-
-
-        }
-
-
-
-    }
-
-    .reservation {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 450px;
-        background-color: rgb(243, 243, 243);
-
-
-        &__bouton {
-            width: 300px;
-            height: 72px;
-            border-radius: 50px;
-            margin-bottom: 10px;
-            background-image: linear-gradient(to top, #9356DC, #FF79DA);
-        }
-
-        &__slogan {
-
-
-            font-family: 'Roboto', sans-serif;
-
-
-
-
-        }
-
-    }
-
-    #reservation__texte {
-        color: #e8dbf9;
-    }
-
     .fonction {
-        width: 100%;
-        height: 620px;
-        display: flex;
-        flex-wrap: wrap;
 
-
-
-        &__title {
-
-
-            width: 100%;
-            height: 50px;
-            margin-top: 80px;
-            margin-left: 25px;
-
-
-
-        }
 
         &__can {
-
 
             display: flex;
             flex-direction: column;
             width: 100%;
             height: 75%;
-            align-items: center;
             justify-content: center;
-
-
-
-
         }
 
         &__filters {
             display: flex;
             align-items: center;
-            width: 90%;
-            height: 100px;
-            border: 2px solid #F2F2F2;
-            border-radius: 25px;
-            box-shadow: 4px 4px 10px gray;
-            margin-bottom: 40px;
-            
-
-
-
-
-
-        }
-
-        &__logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50px;
-            height: 50px;
-            color: gray;
-            margin-right: 30px;
-            font-size: 30px;
-
-
-
+            width: 92%;
         }
 
         &__round {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #9356DC;
-            position: relative;
-            right: 20px;
-
-
+            width: 35px;
+            height: 35px;
+            right: 18px;
         }
-
-        &__numbers {
-            color: white;
-            font-size: 15px;
-        }
-
-        &__texte {
-            margin-right: 70px;
-        }
-
-        
-
 
     }
-
-    
-
 
     .restaurants {
         display: flex;
@@ -795,142 +491,16 @@ a {
         align-items: center;
         width: 100%;
         height: 100%;
-        background-color: #F2F2F2;
-    
-
-
-
-        &__images {
-            width: 100%;
-            height: 270px;
-            object-fit: cover;
-            border-radius: 10px 10px 0px 0px;
-
-
-
-        }
 
         &__items {
             width: 450px;
-            height: 350px;
-            box-shadow: 4px 4px 10px gray;
-            border-radius: 20px;
-            margin-bottom: 30px;
-            position: relative;
-            
-
-
 
         }
-
-        &__title {
-            width: 90%;
-            height: 50px;
-
-
-
-
-        }
-
-        &__texte {
-
-
-
-
-            font-family: 'Roboto', sans-serif;
-            font-size: 18px;
-            width: 50%;
-            height: 50px;
-            margin-left: 15px;
-
-
-
-
-        }
-
-        &__hearts {
-            width: 50px;
-            height: 50px;
-        }
-
-        &__contents {
-            display: flex;
-            justify-content: flex-start;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            height: 80px;
-
-
-
-
-        }
-
-        &__logo {
-
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 40px;
-        }
-
-
-        &__news {
-            width: 125px;
-            height: 45px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #99E2D0;
-            position: absolute;
-            right: +10px;
-            top: +20px;
-            border-radius: 4px;
-
-
-        }
-
-        &__nouveau {
-            color: #3ca288;
-            font-size: 20px;
-        }
-
-
     }
-
-    .black {
-
-
-        width: 30px;
-        
-        right: -31px;
-
-        &:hover {
-            opacity: 0;
-        }
-
-    }
-
-    .pink {
-        width: 32px;
-        opacity: 0;
-        position: relative;
-
-        &:hover {
-            opacity: 1;
-        }
-
-
-
-    }
-
 
     .footer {
-        width: 100%;
+
         height: 330px;
-        background-color: rgb(67, 64, 64);
         margin-top: 0px;
 
         &__can {
@@ -940,43 +510,9 @@ a {
             height: 100%;
         }
 
-        &__title {
-            width: 80%;
-            margin-left: 20px;
-        }
-
         &__list {
-            width: 80%;
             height: 50px;
-            display: flex;
-            align-items: center;
-            margin-left: 20px;
         }
-
-        &__content {
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-        }
-
-        &__logo {
-            width: 100%;
-            height: 50px;
-            font-family: 'Shrikhand', cursive;
-            color: white;
-        }
-
-        &__texte {
-            font-family: 'Roboto', sans-serif;
-            color: white;
-        }
-
-        &__link {
-            color: white;
-        }
-
-
     }
 
 
@@ -985,6 +521,3 @@ a {
 
 
 }
-
-
-
