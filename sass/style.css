@@ -154,6 +154,7 @@ p {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .recherche {
@@ -233,6 +234,10 @@ a {
   box-shadow: 4px 4px 10px gray;
   margin-bottom: 40px;
 }
+.fonction__filters:hover {
+  background-color: #cda8f9;
+  box-shadow: 10px 10px 12px gray;
+}
 .fonction__logo {
   display: flex;
   justify-content: center;
@@ -242,9 +247,6 @@ a {
   color: gray;
   margin-right: 30px;
   font-size: 30px;
-}
-.fonction__logo:hover {
-  background-color: #9356DC;
 }
 .fonction__round {
   display: flex;
@@ -264,13 +266,8 @@ a {
 .fonction__texte {
   margin-right: 70px;
 }
-
-.fonction__filters:hover {
-  background-color: red;
-}
-
 .fonction__icon:hover {
-  background-color: #9356DC;
+  color: #9356DC;
 }
 
 .restaurants {
@@ -289,7 +286,7 @@ a {
   border-radius: 10px 10px 0px 0px;
 }
 .restaurants__items {
-  width: 475px;
+  width: 500px;
   height: 350px;
   box-shadow: 4px 4px 10px gray;
   border-radius: 20px;
@@ -552,7 +549,7 @@ h2 {
     border-radius: 10px 10px 0px 0px;
   }
   .restaurants__items {
-    width: 90%;
+    width: 450px;
     height: 350px;
     box-shadow: 4px 4px 10px gray;
     border-radius: 20px;

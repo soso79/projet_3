@@ -150,6 +150,7 @@ p {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .recherche {
@@ -284,6 +285,10 @@ a {
         border-radius: 25px;
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
+        &:hover{
+            background-color: #cda8f9;
+            box-shadow: 10px 10px 12px gray;
+        }
 
 
 
@@ -301,9 +306,7 @@ a {
         color: gray;
         margin-right: 30px;
         font-size: 30px;
-        &:hover{
-            background-color: #9356DC;
-        }
+        
         
 
 
@@ -333,23 +336,17 @@ a {
     &__texte {
         margin-right: 70px;
 
-
-
-
-
+    }
+    &__icon{
+        &:hover{
+            color: #9356DC;
+        }
     }
 
 
 }
 
-.fonction__filters:hover {
-    background-color: red;
 
-}
-
-.fonction__icon:hover {
-    background-color: #9356DC;
-}
 
 
 .restaurants {
@@ -377,7 +374,7 @@ a {
     }
 
     &__items {
-        width: 475px;
+        width: 500px;
         height: 350px;
         box-shadow: 4px 4px 10px gray;
         border-radius: 20px;
@@ -814,7 +811,7 @@ a {
         }
 
         &__items {
-            width: 90%;
+            width: 450px;
             height: 350px;
             box-shadow: 4px 4px 10px gray;
             border-radius: 20px;
