@@ -118,7 +118,8 @@ a {
 .entrees {
   width: 40%;
   height: 500px;
-  margin-left: 100px;
+  display: flex;
+  justify-content: center;
   /*ici nous créons l animation apparation pour que les différentes section apparaissent sur l axe y*/
   /*ici nous créons la ligne verte */
   /*ici nous créons le filtre qui comporte texte et logo et prix */
@@ -247,7 +248,8 @@ a {
 .plats {
   width: 40%;
   height: 500px;
-  margin-left: 20px;
+  display: flex;
+  justify-content: center;
 }
 .plats__can {
   display: flex;

@@ -126,7 +126,11 @@ a {
 .entrees {
     width: 40%;
     height: 500px;
-    margin-left: 100px;
+    
+    display: flex;
+    justify-content: center;
+    
+    
 /*ici nous créons l animation apparation pour que les différentes section apparaissent sur l axe y*/
     @keyframes apparition {
 
@@ -253,7 +257,11 @@ a {
 .plats {
     width: 40%;
     height: 500px;
-    margin-left: 20px;
+    
+    display: flex;
+    justify-content: center;
+    
+
 
     &__can {
         display: flex;
