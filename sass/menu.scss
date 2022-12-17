@@ -111,7 +111,7 @@ a {
 
     
 }
-
+/*div qui contient le logo sur fond blanc*/
 .round {
     display: flex;
     justify-content: center;
@@ -127,7 +127,7 @@ a {
     width: 40%;
     height: 500px;
     margin-left: 100px;
-
+/*ici nous créons l animation apparation pour que les différentes section apparaissent sur l axe y*/
     @keyframes apparition {
 
         0% {
@@ -152,7 +152,7 @@ a {
         width: 450px;
         height: 500px;
     }
-
+/*ici nous créons la ligne verte */
     &__line {
         width: 80px;
         border: 2px solid #99E2D0;
@@ -177,7 +177,7 @@ a {
         font-weight: 100;
         font-size: 18px;
     }
-
+/*ici nous créons le filtre qui comporte texte et logo et prix */
     &__filters {
         display: flex;
         align-items: center;
@@ -191,9 +191,9 @@ a {
         animation: apparition 5s;
         overflow: hidden;
 
-
+/*ici c est la partie actice donc au clik nous allons déclencher l animation */
         &:active {
-
+/*ici nous utilisons transform origin pour que le point d ancrage soit a droite , avec une transition de 1000ms*/
             .entrees__check {
                 margin-right: 0;
                 border-radius: 0 20px 20px 0;
@@ -201,17 +201,17 @@ a {
                 transform: scaleX(1);
                 transition: transform 1000ms;
             }
-
+/*ici grace a rotate le logo va tourner sur lui meme*/
             .entrees__logo {
                 transform: rotate(-360deg);
                 transition: transform 1200ms ease-in-out;
             }
-
+/*ici grace a translate (x) le prix va pouvoir glisser */
             .entrees__prix {
                 transform: translateX(-30%);
                 transition: transform 400ms ease-in;
             }
-
+/*ici grace a text overflow ellipsisi nous allons pouvoir faire apparaitre les trois petits points au clic*/
             .entrees__texte {
                 max-width: 40%;
                 text-overflow: ellipsis;
@@ -249,7 +249,7 @@ a {
         color: #99E2D0;
     }
 }
-
+/*ici commence la section plats */
 .plats {
     width: 40%;
     height: 500px;
@@ -299,9 +299,12 @@ a {
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
         animation: apparition 5s;
+        animation-delay: 1s;
         overflow: hidden;
+        opacity: 0;
         animation-fill-mode: forwards;
-
+        
+/*nous avons utilisé la meme méthode que pour entrées rien ne change a part l ajout d un delay pour l apparition */
         &:active {
 
             .plats__check {
@@ -662,7 +665,7 @@ a {
 
     .entrees {
         width: 100%;
-        margin-left: 0;
+        
 
         &__can {
             display: flex;
@@ -698,7 +701,7 @@ a {
 
     .plats {
         width: 100%;
-        margin-left: 0;
+        
 
         &__can {
             margin: 0 0 20px 0;

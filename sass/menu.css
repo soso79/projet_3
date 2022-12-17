@@ -104,6 +104,7 @@ a {
   font-family: "Shrikhand", cursive;
 }
 
+/*div qui contient le logo sur fond blanc*/
 .round {
   display: flex;
   justify-content: center;
@@ -118,6 +119,9 @@ a {
   width: 40%;
   height: 500px;
   margin-left: 100px;
+  /*ici nous créons l animation apparation pour que les différentes section apparaissent sur l axe y*/
+  /*ici nous créons la ligne verte */
+  /*ici nous créons le filtre qui comporte texte et logo et prix */
 }
 @-webkit-keyframes apparition {
   0% {
@@ -184,6 +188,13 @@ a {
   -webkit-animation: apparition 5s;
           animation: apparition 5s;
   overflow: hidden;
+  /*ici c est la partie actice donc au clik nous allons déclencher l animation */
+}
+.entrees__filters:active {
+  /*ici nous utilisons transform origin pour que le point d ancrage soit a droite , avec une transition de 1000ms*/
+  /*ici grace a rotate le logo va tourner sur lui meme*/
+  /*ici grace a translate (x) le prix va pouvoir glisser */
+  /*ici grace a text overflow ellipsisi nous allons pouvoir faire apparaitre les trois petits points au clic*/
 }
 .entrees__filters:active .entrees__check {
   margin-right: 0;
@@ -232,6 +243,7 @@ a {
   color: #99E2D0;
 }
 
+/*ici commence la section plats */
 .plats {
   width: 40%;
   height: 500px;
@@ -278,9 +290,13 @@ a {
   margin-bottom: 40px;
   -webkit-animation: apparition 5s;
           animation: apparition 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   overflow: hidden;
+  opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  /*nous avons utilisé la meme méthode que pour entrées rien ne change a part l ajout d un delay pour l apparition */
 }
 .plats__filters:active .plats__check {
   margin-right: 0;
@@ -598,7 +614,6 @@ a {
   }
   .entrees {
     width: 100%;
-    margin-left: 0;
   }
   .entrees__can {
     display: flex;
@@ -626,7 +641,6 @@ a {
   }
   .plats {
     width: 100%;
-    margin-left: 0;
   }
   .plats__can {
     margin: 0 0 20px 0;
