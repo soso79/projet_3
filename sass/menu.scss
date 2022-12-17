@@ -91,6 +91,7 @@ a {
         align-items: center;
         width: 100%;
         height: 100px;
+        margin-left: 20px;
     }
 
     &__bouton {
@@ -343,7 +344,6 @@ a {
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
-
             }
         }
     }
@@ -440,8 +440,6 @@ a {
         opacity: 0;
         overflow: hidden;
 
-
-
         &:active {
 
             .Desserts__check {
@@ -498,7 +496,6 @@ a {
         font-size: 20px;
         color: #99E2D0;
     }
-
 }
 
 #speciale {
@@ -514,7 +511,6 @@ a {
     margin-top: -50px;
 
     &__can {
-
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -529,7 +525,6 @@ a {
     &__list {
         width: 80%;
         height: 50px;
-
         display: flex;
         align-items: center;
         margin-left: 20px;
@@ -552,19 +547,15 @@ a {
     &__texte {
         font-family: 'Roboto', sans-serif;
         color: white;
-
     }
 
     &__link {
         color: white;
     }
-
-
 }
 
 
 @media screen and (max-width:992px) {
-
 
     .header__logo {
         margin-left: 200px;
@@ -585,11 +576,7 @@ a {
     .plats__filters {
         width: 95%;
     }
-
-
 }
-
-
 
 
 @media screen and (max-width: 768px) {
@@ -712,7 +699,7 @@ a {
         }
 
         &__filters {
-            width: 92%;
+            width: 95%;
             margin-bottom: 20px;
             margin-left: 10px;
         }
