@@ -299,7 +299,7 @@ a {
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
         animation: apparition 5s;
-        animation-delay: 1s;
+        animation-delay: .5s;
         overflow: hidden;
         opacity: 0;
         animation-fill-mode: forwards;
@@ -421,7 +421,7 @@ a {
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 20px;
         animation: apparition 5s;
-        animation-delay: 1.5s;
+        animation-delay: 1s;
         animation-fill-mode: forwards;
         opacity: 0;
         overflow: hidden;
@@ -724,7 +724,7 @@ a {
             height: 80px;
             margin-bottom: 20px;
             margin-left: 10px;
-            animation-delay: 30ms;
+            
         }
 
     }

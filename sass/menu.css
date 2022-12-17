@@ -290,8 +290,8 @@ a {
   margin-bottom: 40px;
   -webkit-animation: apparition 5s;
           animation: apparition 5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
   overflow: hidden;
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
@@ -399,8 +399,8 @@ a {
   margin-bottom: 20px;
   -webkit-animation: apparition 5s;
           animation: apparition 5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
@@ -660,8 +660,6 @@ a {
     height: 80px;
     margin-bottom: 20px;
     margin-left: 10px;
-    -webkit-animation-delay: 30ms;
-            animation-delay: 30ms;
   }
   .Desserts {
     height: 500px;
