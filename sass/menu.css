@@ -1,9 +1,11 @@
+@charset "UTF-8";
 body {
   margin: auto;
   padding: 0px;
   width: 100%;
 }
 
+/*ici nous donnons nous utilisons la propriété textoverflow pour faire apparaitre les trois petits points*/
 span {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -20,6 +22,7 @@ a {
   color: black;
 }
 
+/*ici on superpose les deux coeurs */
 .black {
   width: 30px;
   position: relative;
@@ -60,6 +63,7 @@ a {
   margin-left: 370px;
 }
 
+/*ici débute la section menu*/
 .menu {
   width: 100%;
   height: 1550px;
@@ -99,26 +103,6 @@ a {
 .menu__titre {
   font-family: "Shrikhand", cursive;
 }
-.menu__speciale {
-  width: 100%;
-  height: 1750px;
-  border-radius: 30px 30px 0 0;
-  background-color: #F2F2F2;
-  margin-top: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  position: relative;
-  top: -50px;
-}
-.menu__tarifs {
-  width: 20px;
-  position: relative;
-}
-.menu__tarifs:hover {
-  opacity: 1;
-  left: -50px;
-}
 
 .round {
   display: flex;
@@ -133,6 +117,7 @@ a {
 .entrees {
   width: 40%;
   height: 500px;
+  margin-left: 100px;
 }
 @-webkit-keyframes apparition {
   0% {
@@ -250,6 +235,7 @@ a {
 .plats {
   width: 40%;
   height: 500px;
+  margin-left: 20px;
 }
 .plats__can {
   display: flex;
@@ -504,11 +490,17 @@ a {
   .header__logo {
     margin-left: 200px;
   }
+  .entrees {
+    margin-left: 0;
+  }
   .entrees__can {
     width: 350px;
   }
   .entrees__filters {
     width: 95%;
+  }
+  .plats {
+    margin-left: 0;
   }
   .plats__can {
     width: 350px;
@@ -606,6 +598,7 @@ a {
   }
   .entrees {
     width: 100%;
+    margin-left: 0;
   }
   .entrees__can {
     display: flex;
@@ -633,6 +626,7 @@ a {
   }
   .plats {
     width: 100%;
+    margin-left: 0;
   }
   .plats__can {
     margin: 0 0 20px 0;
