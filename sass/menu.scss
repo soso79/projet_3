@@ -112,10 +112,7 @@ a {
     &__titre {
         font-family: 'Shrikhand', cursive;
     }
-
-
-
-
+    
 }
 
 /*div qui contient le logo sur fond blanc*/
@@ -128,7 +125,8 @@ a {
     border-radius: 50%;
     background-color: white;
 }
-.entrees__speciale{
+
+.entrees__speciale {
     width: 40%;
     height: 650px;
     display: flex;
@@ -169,7 +167,8 @@ a {
         display: flex;
         flex-direction: column;
     }
-    &__canette{
+
+    &__canette {
         margin-bottom: 20px;
         width: 450px;
         height: 650px;
@@ -587,7 +586,7 @@ a {
         margin-left: 200px;
     }
 
-    .entrees  {
+    .entrees {
         margin-left: 0;
 
         &__can {
@@ -650,8 +649,6 @@ a {
 
     }
 
-
-
     .black {
 
 
@@ -713,15 +710,16 @@ a {
 
     /*ici la partie entrée*/
     /*ici nous avons la partie speciale pour la note enchantée quatre vignette */
-    .entrees__speciale{
+    .entrees__speciale {
         width: 100%;
         height: 600px;
     }
 
-    .entrees__canette{
+    .entrees__canette {
         width: 100%;
         height: 600px;
     }
+
     .entrees {
         width: 100%;
         height: 480px;
@@ -729,7 +727,7 @@ a {
         &__can {
             width: 100%;
             height: 480px;
-            
+
         }
 
         &__line {
@@ -767,7 +765,7 @@ a {
             margin: 0;
             width: 100%;
             height: 480px;
-            
+
         }
 
         &__title {
@@ -796,11 +794,9 @@ a {
         height: 480px;
 
         &__can {
-        
+
             width: 100%;
             height: 480px;
-            
-            
         }
 
         &__title {
@@ -817,7 +813,7 @@ a {
         &__filters {
             width: 95%;
             height: 100px;
-            
+
         }
     }
 }
