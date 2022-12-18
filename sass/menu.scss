@@ -1,4 +1,3 @@
-
 /* bonjour et bienvenue*/
 
 body {
@@ -6,6 +5,7 @@ body {
     padding: 0px;
     width: 100%;
 }
+
 /*ici nous donnons nous utilisons la propriété textoverflow pour faire apparaitre les trois petits points*/
 span {
     font-family: 'Roboto', sans-serif;
@@ -22,6 +22,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
 /*ici on superpose les deux coeurs */
 .black {
     width: 30px;
@@ -64,7 +65,9 @@ a {
     font-size: 42px;
     margin-left: 370px;
 }
+
 /*ici débute la section menu*/
+/*on utilise position relative afin que l image et le menu se chevauche*/
 .menu {
     width: 100%;
     height: 1550px;
@@ -110,10 +113,8 @@ a {
         font-family: 'Shrikhand', cursive;
     }
 
-   
-
-    
 }
+
 /*div qui contient le logo sur fond blanc*/
 .round {
     display: flex;
@@ -129,12 +130,12 @@ a {
 .entrees {
     width: 40%;
     height: 500px;
-    
+
     display: flex;
     justify-content: center;
-    
-    
-/*ici nous créons l animation apparation pour que les différentes section apparaissent sur l axe y*/
+
+
+    /*ici nous créons l animation apparation pour que les différentes section apparaissent sur l axe y*/
     @keyframes apparition {
 
         0% {
@@ -159,7 +160,8 @@ a {
         width: 450px;
         height: 500px;
     }
-/*ici nous créons la ligne verte */
+
+    /*ici nous créons la ligne verte */
     &__line {
         width: 80px;
         border: 2px solid #99E2D0;
@@ -184,7 +186,8 @@ a {
         font-weight: 100;
         font-size: 18px;
     }
-/*ici nous créons le filtre qui comporte texte et logo et prix */
+
+    /*ici nous créons le filtre qui comporte texte et logo et prix */
     &__filters {
         display: flex;
         align-items: center;
@@ -198,9 +201,10 @@ a {
         animation: apparition 5s;
         overflow: hidden;
 
-/*ici c est la partie actice donc au clik nous allons déclencher l animation */
+        /*ici c est la partie actice donc au clik nous allons déclencher l animation */
         &:active {
-/*ici nous utilisons transform origin pour que le point d ancrage soit a droite , avec une transition de 1000ms*/
+
+            /*ici nous utilisons transform origin pour que le point d ancrage soit a droite , avec une transition de 1000ms*/
             .entrees__check {
                 margin-right: 0;
                 border-radius: 0 20px 20px 0;
@@ -208,17 +212,20 @@ a {
                 transform: scaleX(1);
                 transition: transform 1000ms;
             }
-/*ici grace a rotate le logo va tourner sur lui meme*/
+
+            /*ici grace a rotate le logo va tourner sur lui meme*/
             .entrees__logo {
                 transform: rotate(-360deg);
                 transition: transform 1200ms ease-in-out;
             }
-/*ici grace a translate (x) le prix va pouvoir glisser */
+
+            /*ici grace a translate (x) le prix va pouvoir glisser */
             .entrees__prix {
                 transform: translateX(-30%);
                 transition: transform 400ms ease-in;
             }
-/*ici grace a text overflow ellipsisi nous allons pouvoir faire apparaitre les trois petits points au clic*/
+
+            /*ici grace a text overflow ellipsisi nous allons pouvoir faire apparaitre les trois petits points au clic*/
             .entrees__texte {
                 max-width: 40%;
                 text-overflow: ellipsis;
@@ -256,13 +263,14 @@ a {
         color: #99E2D0;
     }
 }
+
 /*ici commence la section plats */
 .plats {
     width: 40%;
     height: 500px;
     display: flex;
     justify-content: center;
-    
+
 
 
     &__can {
@@ -298,6 +306,8 @@ a {
         margin-left: 10px;
     }
 
+    /*ici afin de créer un décalage nous avons ajouté animation delay*/
+    /*ajout  animation fill mode afin que l animation garde le style initial une fois l animation exécutée */
     &__filters {
         display: flex;
         align-items: center;
@@ -313,8 +323,8 @@ a {
         overflow: hidden;
         opacity: 0;
         animation-fill-mode: forwards;
-        
-/*nous avons utilisé la meme méthode que pour entrées rien ne change a part l ajout d un delay pour l apparition */
+
+        /*nous avons utilisé la meme méthode que pour entrées rien ne change */
         &:active {
 
             .plats__check {
@@ -372,6 +382,7 @@ a {
         color: #99E2D0;
     }
 }
+
 /*ici commence la section desserts*/
 .Desserts {
     width: 100%;
@@ -420,6 +431,7 @@ a {
         margin-bottom: 15px;
     }
 
+    /*ici comme pour la partie nous avons ajouté un delay pour créer un décalage d apparition */
     &__filters {
         display: flex;
         align-items: center;
@@ -494,12 +506,14 @@ a {
     }
 }
 
+/*ici la personalisation du span qui doit etre en gras*/
 #speciale {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
 
+/*ici commence la partie footer */
 .footer {
     width: 100%;
     height: 330px;
@@ -550,38 +564,41 @@ a {
     }
 }
 
-
+/*ici commence la media querie pour tablette */
 @media screen and (max-width:992px) {
 
     .header__logo {
         margin-left: 200px;
     }
-    .entrees{
+
+    .entrees {
         margin-left: 0;
-    
-    &__can {
-        width: 350px;
+
+        &__can {
+            width: 350px;
+        }
+
+        &__filters {
+            width: 95%;
+        }
+
     }
 
-    &__filters {
-        width: 95%;
-    }
+    .plats {
+        margin-left: 0;
 
-    }
-.plats{
-    margin-left: 0;
+        &__can {
+            width: 350px;
+        }
 
-    &__can {
-        width: 350px;
-    }
-
-    &__filters {
-        width: 95%;
-    }
+        &__filters {
+            width: 95%;
+        }
 
     }
 }
 
+/*ici commence la media queries pour la partie mobile*/
 
 @media screen and (max-width: 768px) {
     body {
@@ -593,33 +610,7 @@ a {
         font-size: 30px;
     }
 
-    .black {
-
-
-        width: 30px;
-        position: relative;
-        right: -35px;
-
-        &:active {
-            opacity: 1;
-
-        }
-
-    }
-
-    .pink {
-        width: 30px;
-        opacity: 0;
-
-        &:active {
-            opacity: 1;
-            animation-name: progress-heart;
-            animation-fill-mode: forwards;
-            animation-duration: 1000ms infinite;
-            transition: 1500ms ease-in;
-        }
-    }
-
+    /*ici on crée l animation qui remplit le coeur progressivemnt */
     @keyframes progress-heart {
         0% {
             transform: scaleY(0);
@@ -641,6 +632,34 @@ a {
             transform: scaleY(1);
         }
 
+    }
+
+    .black {
+
+
+        width: 30px;
+        position: relative;
+        right: -36px;
+
+        &:active {
+            opacity: 1;
+
+        }
+
+    }
+
+    .pink {
+        width: 30px;
+        opacity: 0;
+
+        /*ici on déclenche l animation progress-heart au clic*/
+        &:active {
+            opacity: 1;
+            animation-name: progress-heart;
+            animation-fill-mode: forwards;
+            animation-duration: 1000ms infinite;
+            transition: 1500ms ease-in;
+        }
     }
 
     .header__logo {
@@ -673,9 +692,9 @@ a {
         margin-right: 25px;
     }
 
+    /*ici la partie entrée*/
     .entrees {
         width: 100%;
-        
 
         &__can {
             display: flex;
@@ -709,9 +728,10 @@ a {
 
     }
 
+    /*ici commence la partie plat*/
     .plats {
         width: 100%;
-        
+
 
         &__can {
             margin: 0 0 20px 0;
@@ -734,11 +754,12 @@ a {
             height: 80px;
             margin-bottom: 20px;
             margin-left: 10px;
-            
+
         }
 
     }
 
+    /*et enfin la partie dessert*/
     .Desserts {
         height: 500px;
 

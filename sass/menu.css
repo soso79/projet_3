@@ -65,6 +65,7 @@ a {
 }
 
 /*ici débute la section menu*/
+/*on utilise position relative afin que l image et le menu se chevauche*/
 .menu {
   width: 100%;
   height: 1550px;
@@ -251,6 +252,8 @@ a {
   height: 500px;
   display: flex;
   justify-content: center;
+  /*ici afin de créer un décalage nous avons ajouté animation delay*/
+  /*ajout  animation fill mode afin que l animation garde le style initial une fois l animation exécutée */
 }
 .plats__can {
   display: flex;
@@ -299,7 +302,7 @@ a {
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  /*nous avons utilisé la meme méthode que pour entrées rien ne change a part l ajout d un delay pour l apparition */
+  /*nous avons utilisé la meme méthode que pour entrées rien ne change */
 }
 .plats__filters:active .plats__check {
   margin-right: 0;
@@ -356,6 +359,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  /*ici comme pour la partie nous avons ajouté un delay pour créer un décalage d apparition */
 }
 .Desserts__can {
   display: flex;
@@ -457,12 +461,14 @@ a {
   color: #99E2D0;
 }
 
+/*ici la personalisation du span qui doit etre en gras*/
 #speciale {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
+/*ici commence la partie footer */
 .footer {
   width: 100%;
   height: 330px;
@@ -506,6 +512,7 @@ a {
   color: white;
 }
 
+/*ici commence la media querie pour tablette */
 @media screen and (max-width: 992px) {
   .header__logo {
     margin-left: 200px;
@@ -529,6 +536,7 @@ a {
     width: 95%;
   }
 }
+/*ici commence la media queries pour la partie mobile*/
 @media screen and (max-width: 768px) {
   body {
     max-width: 768px;
@@ -537,28 +545,7 @@ a {
     font-family: "Roboto", sans-serif;
     font-size: 30px;
   }
-  .black {
-    width: 30px;
-    position: relative;
-    right: -35px;
-  }
-  .black:active {
-    opacity: 1;
-  }
-  .pink {
-    width: 30px;
-    opacity: 0;
-  }
-  .pink:active {
-    opacity: 1;
-    -webkit-animation-name: progress-heart;
-            animation-name: progress-heart;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-duration: 1000ms infinite;
-            animation-duration: 1000ms infinite;
-    transition: 1500ms ease-in;
-  }
+  /*ici on crée l animation qui remplit le coeur progressivemnt */
   @-webkit-keyframes progress-heart {
     0% {
       transform: scaleY(0);
@@ -593,6 +580,29 @@ a {
       transform: scaleY(1);
     }
   }
+  .black {
+    width: 30px;
+    position: relative;
+    right: -36px;
+  }
+  .black:active {
+    opacity: 1;
+  }
+  .pink {
+    width: 30px;
+    opacity: 0;
+    /*ici on déclenche l animation progress-heart au clic*/
+  }
+  .pink:active {
+    opacity: 1;
+    -webkit-animation-name: progress-heart;
+            animation-name: progress-heart;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 1000ms infinite;
+            animation-duration: 1000ms infinite;
+    transition: 1500ms ease-in;
+  }
   .header__logo {
     margin-left: 40px;
   }
@@ -616,6 +626,7 @@ a {
   .restaurants__logo {
     margin-right: 25px;
   }
+  /*ici la partie entrée*/
   .entrees {
     width: 100%;
   }
@@ -643,6 +654,7 @@ a {
     margin-bottom: 20px;
     margin-left: 10px;
   }
+  /*ici commence la partie plat*/
   .plats {
     width: 100%;
   }
@@ -665,6 +677,7 @@ a {
     margin-bottom: 20px;
     margin-left: 10px;
   }
+  /*et enfin la partie dessert*/
   .Desserts {
     height: 500px;
   }
