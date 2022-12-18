@@ -117,9 +117,16 @@ a {
   background-color: white;
 }
 
+.entrees__speciale {
+  width: 40%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+}
+
 .entrees {
   width: 40%;
-  height: 500px;
+  height: 650px;
   display: flex;
   justify-content: center;
   /*ici nous créons l animation apparation pour que les différentes section apparaissent sur l axe y*/
@@ -154,7 +161,16 @@ a {
 .entrees__can {
   margin-bottom: 20px;
   width: 450px;
-  height: 500px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+}
+.entrees__canette {
+  margin-bottom: 20px;
+  width: 450px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
 }
 .entrees__line {
   width: 80px;
@@ -249,7 +265,7 @@ a {
 /*ici commence la section plats */
 .plats {
   width: 40%;
-  height: 500px;
+  height: 650px;
   display: flex;
   justify-content: center;
   /*ici afin de créer un décalage nous avons ajouté animation delay*/
@@ -259,7 +275,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 450px;
-  height: 500px;
+  height: 650px;
   margin-bottom: 20px;
 }
 .plats__title {
@@ -627,15 +643,22 @@ a {
     margin-right: 25px;
   }
   /*ici la partie entrée*/
+  /*ici nous avons la partie speciale pour la note enchantée quatre vignette */
+  .entrees__speciale {
+    width: 100%;
+    height: 600px;
+  }
+  .entrees__canette {
+    width: 100%;
+    height: 600px;
+  }
   .entrees {
     width: 100%;
+    height: 480px;
   }
   .entrees__can {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
     width: 100%;
-    height: 380px;
+    height: 480px;
   }
   .entrees__line {
     width: 40px;
@@ -651,17 +674,19 @@ a {
   }
   .entrees__filters {
     width: 95%;
+    height: 100px;
     margin-bottom: 20px;
     margin-left: 10px;
   }
   /*ici commence la partie plat*/
   .plats {
     width: 100%;
+    height: 480px;
   }
   .plats__can {
-    margin: 0 0 20px 0;
+    margin: 0;
     width: 100%;
-    height: 380px;
+    height: 480px;
   }
   .plats__title {
     width: 80%;
@@ -673,18 +698,18 @@ a {
   }
   .plats__filters {
     width: 95%;
-    height: 80px;
+    height: 100px;
     margin-bottom: 20px;
     margin-left: 10px;
   }
   /*et enfin la partie dessert*/
   .Desserts {
-    height: 500px;
+    width: 100%;
+    height: 480px;
   }
   .Desserts__can {
-    margin: 0 0 20px 0;
     width: 100%;
-    height: 380px;
+    height: 480px;
   }
   .Desserts__title {
     width: 80%;
@@ -697,7 +722,6 @@ a {
   }
   .Desserts__filters {
     width: 95%;
-    height: 80px;
-    margin-left: 10px;
+    height: 100px;
   }
 }/*# sourceMappingURL=menu.css.map */

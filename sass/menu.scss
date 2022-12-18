@@ -113,6 +113,9 @@ a {
         font-family: 'Shrikhand', cursive;
     }
 
+
+
+
 }
 
 /*div qui contient le logo sur fond blanc*/
@@ -125,12 +128,16 @@ a {
     border-radius: 50%;
     background-color: white;
 }
-
+.entrees__speciale{
+    width: 40%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
 
 .entrees {
     width: 40%;
-    height: 500px;
-
+    height: 650px;
     display: flex;
     justify-content: center;
 
@@ -158,7 +165,16 @@ a {
     &__can {
         margin-bottom: 20px;
         width: 450px;
-        height: 500px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__canette{
+        margin-bottom: 20px;
+        width: 450px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
     }
 
     /*ici nous créons la ligne verte */
@@ -267,7 +283,7 @@ a {
 /*ici commence la section plats */
 .plats {
     width: 40%;
-    height: 500px;
+    height: 650px;
     display: flex;
     justify-content: center;
 
@@ -277,7 +293,7 @@ a {
         display: flex;
         flex-direction: column;
         width: 450px;
-        height: 500px;
+        height: 650px;
         margin-bottom: 20px;
     }
 
@@ -571,7 +587,7 @@ a {
         margin-left: 200px;
     }
 
-    .entrees {
+    .entrees  {
         margin-left: 0;
 
         &__can {
@@ -634,6 +650,8 @@ a {
 
     }
 
+
+
     .black {
 
 
@@ -661,6 +679,7 @@ a {
             transition: 1500ms ease-in;
         }
     }
+
 
     .header__logo {
 
@@ -693,15 +712,24 @@ a {
     }
 
     /*ici la partie entrée*/
+    /*ici nous avons la partie speciale pour la note enchantée quatre vignette */
+    .entrees__speciale{
+        width: 100%;
+        height: 600px;
+    }
+
+    .entrees__canette{
+        width: 100%;
+        height: 600px;
+    }
     .entrees {
         width: 100%;
+        height: 480px;
 
         &__can {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 20px;
             width: 100%;
-            height: 380px;
+            height: 480px;
+            
         }
 
         &__line {
@@ -722,6 +750,7 @@ a {
 
         &__filters {
             width: 95%;
+            height: 100px;
             margin-bottom: 20px;
             margin-left: 10px;
         }
@@ -731,12 +760,14 @@ a {
     /*ici commence la partie plat*/
     .plats {
         width: 100%;
+        height: 480px;
 
 
         &__can {
-            margin: 0 0 20px 0;
+            margin: 0;
             width: 100%;
-            height: 380px;
+            height: 480px;
+            
         }
 
         &__title {
@@ -751,7 +782,7 @@ a {
 
         &__filters {
             width: 95%;
-            height: 80px;
+            height: 100px;
             margin-bottom: 20px;
             margin-left: 10px;
 
@@ -761,12 +792,15 @@ a {
 
     /*et enfin la partie dessert*/
     .Desserts {
-        height: 500px;
+        width: 100%;
+        height: 480px;
 
         &__can {
-            margin: 0 0 20px 0;
+        
             width: 100%;
-            height: 380px;
+            height: 480px;
+            
+            
         }
 
         &__title {
@@ -782,8 +816,8 @@ a {
 
         &__filters {
             width: 95%;
-            height: 80px;
-            margin-left: 10px;
+            height: 100px;
+            
         }
     }
 }
