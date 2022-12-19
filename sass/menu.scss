@@ -43,13 +43,15 @@ a {
     }
 }
 
-.header__can {
+
+header {
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: flex-start;
     width: 100%;
     height: 80px;
+    
 }
 
 .header__bouton {
@@ -161,19 +163,21 @@ a {
     }
 
     &__can {
-        margin-bottom: 20px;
-        width: 450px;
-        height: 650px;
         display: flex;
         flex-direction: column;
+        width: 450px;
+        height: 650px;
+        margin-bottom: 20px;
+        
     }
 
     &__canette {
-        margin-bottom: 20px;
-        width: 450px;
-        height: 650px;
         display: flex;
         flex-direction: column;
+        width: 450px;
+        height: 650px;
+        margin-bottom: 20px;
+        
     }
 
     /*ici nous créons la ligne verte */
@@ -215,6 +219,7 @@ a {
         margin-bottom: 40px;
         animation: apparition 5s;
         overflow: hidden;
+        animation-fill-mode: forwards;
 
         /*ici c est la partie actice donc au clik nous allons déclencher l animation */
         &:active {
@@ -365,6 +370,7 @@ a {
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
+                
             }
         }
     }
@@ -581,34 +587,51 @@ a {
 
 /*ici commence la media querie pour tablette */
 @media screen and (max-width:992px) {
+    
 
     .header__logo {
         margin-left: 200px;
     }
 
     .entrees {
+        width: 48%;
         margin-left: 0;
+        
+        
+        
+        
 
         &__can {
-            width: 350px;
+            width: 100%;
+            
+            
+            
+            
         }
 
         &__filters {
             width: 95%;
+            margin-left: 5px;
         }
+        
 
     }
 
     .plats {
+        width: 48%;
         margin-left: 0;
+        
 
         &__can {
-            width: 350px;
+            width: 100%;
         }
 
         &__filters {
             width: 95%;
+            margin-left: 5px;
+            
         }
+        
 
     }
 }
@@ -616,9 +639,7 @@ a {
 /*ici commence la media queries pour la partie mobile*/
 
 @media screen and (max-width: 768px) {
-    body {
-        max-width: 768px;
-    }
+    
 
     h2 {
         font-family: 'Roboto', sans-serif;
@@ -723,10 +744,13 @@ a {
     .entrees {
         width: 100%;
         height: 480px;
+        
+        
 
         &__can {
             width: 100%;
             height: 480px;
+            
 
         }
 

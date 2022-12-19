@@ -41,7 +41,7 @@ a {
   opacity: 1;
 }
 
-.header__can {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,18 +159,18 @@ a {
   opacity: 0;
 }
 .entrees__can {
-  margin-bottom: 20px;
-  width: 450px;
-  height: 650px;
   display: flex;
   flex-direction: column;
+  width: 450px;
+  height: 650px;
+  margin-bottom: 20px;
 }
 .entrees__canette {
-  margin-bottom: 20px;
-  width: 450px;
-  height: 650px;
   display: flex;
   flex-direction: column;
+  width: 450px;
+  height: 650px;
+  margin-bottom: 20px;
 }
 .entrees__line {
   width: 80px;
@@ -207,6 +207,8 @@ a {
   -webkit-animation: apparition 5s;
           animation: apparition 5s;
   overflow: hidden;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   /*ici c est la partie actice donc au clik nous allons déclencher l animation */
 }
 .entrees__filters:active {
@@ -534,29 +536,30 @@ a {
     margin-left: 200px;
   }
   .entrees {
+    width: 48%;
     margin-left: 0;
   }
   .entrees__can {
-    width: 350px;
+    width: 100%;
   }
   .entrees__filters {
     width: 95%;
+    margin-left: 5px;
   }
   .plats {
+    width: 48%;
     margin-left: 0;
   }
   .plats__can {
-    width: 350px;
+    width: 100%;
   }
   .plats__filters {
     width: 95%;
+    margin-left: 5px;
   }
 }
 /*ici commence la media queries pour la partie mobile*/
 @media screen and (max-width: 768px) {
-  body {
-    max-width: 768px;
-  }
   h2 {
     font-family: "Roboto", sans-serif;
     font-size: 30px;
