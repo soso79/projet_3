@@ -50,12 +50,13 @@ header {
   border: 2px solid red;
 }
 
-.header__bouton {
-  width: 50px;
-  height: 50px;
+.header__arrow {
   display: flex;
   align-items: center;
-  margin-left: -550px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 30px;
 }
 
 .header__logo {
@@ -535,6 +536,9 @@ header {
 
 /*ici commence la media querie pour tablette */
 @media screen and (max-width: 992px) {
+  body {
+    color: #9356DC;
+  }
   h2 {
     font-family: "Roboto", sans-serif;
     font-size: 30px;
@@ -596,12 +600,6 @@ header {
     -webkit-animation-duration: 1000ms infinite;
             animation-duration: 1000ms infinite;
     transition: 1500ms ease-in;
-  }
-  header {
-    align-items: center;
-  }
-  .header__bouton {
-    margin-left: -250px;
   }
   .menu {
     height: 1850px;
