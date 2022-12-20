@@ -783,9 +783,6 @@ header {
             animation-duration: 1000ms infinite;
     transition: 1500ms ease-in;
   }
-  .header__bouton {
-    margin-left: -120px;
-  }
   .menu {
     height: 1850px;
     display: flex;
