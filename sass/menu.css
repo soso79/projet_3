@@ -45,9 +45,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: flex-start;
   width: 100%;
   height: 80px;
+  border: 2px solid red;
 }
 
 .header__bouton {
@@ -55,13 +55,12 @@ header {
   height: 50px;
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: -550px;
 }
 
 .header__logo {
   font-family: "Shrikhand", cursive;
   font-size: 42px;
-  margin-left: 370px;
 }
 
 /*ici débute la section menu*/
@@ -92,9 +91,11 @@ header {
 .menu__title {
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 100px;
-  margin-left: 20px;
+  justify-content: flex-start;
+  justify-content: space-between;
+  width: 95%;
+  margin-right: 15px;
+  border: 2px solid red;
 }
 .menu__bouton {
   width: 300px;
@@ -534,35 +535,190 @@ header {
 
 /*ici commence la media querie pour tablette */
 @media screen and (max-width: 992px) {
-  .header__logo {
-    margin-left: 200px;
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+  }
+  /*ici on crée l animation qui remplit le coeur progressivemnt */
+  @-webkit-keyframes progress-heart {
+    0% {
+      transform: scaleY(0);
+    }
+    25% {
+      transform: scaleY(0.3);
+    }
+    50% {
+      transform: scaleY(0.5);
+    }
+    75% {
+      transform: scaleY(0.7);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  @keyframes progress-heart {
+    0% {
+      transform: scaleY(0);
+    }
+    25% {
+      transform: scaleY(0.3);
+    }
+    50% {
+      transform: scaleY(0.5);
+    }
+    75% {
+      transform: scaleY(0.7);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  .black {
+    width: 30px;
+    position: relative;
+    right: -36px;
+  }
+  .black:active {
+    opacity: 1;
+  }
+  .pink {
+    width: 30px;
+    opacity: 0;
+    /*ici on déclenche l animation progress-heart au clic*/
+  }
+  .pink:active {
+    opacity: 1;
+    -webkit-animation-name: progress-heart;
+            animation-name: progress-heart;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 1000ms infinite;
+            animation-duration: 1000ms infinite;
+    transition: 1500ms ease-in;
+  }
+  header {
+    align-items: center;
+  }
+  .header__bouton {
+    margin-left: -250px;
+  }
+  .menu {
+    height: 1850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu__title {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin-right: 15px;
+  }
+  .menu__bouton {
+    height: 80px;
+    margin-top: 80px;
+  }
+  .restaurants__logo {
+    margin-right: 25px;
+  }
+  /*ici la partie entrée*/
+  /*ici nous avons la partie speciale pour la note enchantée quatre vignette */
+  .entrees__speciale {
+    width: 100%;
+    height: 600px;
   }
   .entrees {
-    width: 48%;
-    margin-left: 0;
-  }
-  .entrees__speciale {
-    width: 48%;
-    margin-left: 0;
-    background-color: #9356DC;
+    width: 100%;
+    height: 480px;
   }
   .entrees__can {
     width: 100%;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .entrees__canette {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .entrees__line {
+    width: 40px;
+    margin-left: 10px;
+  }
+  .entrees__texte {
+    font-weight: 400;
+  }
+  .entrees__title {
+    width: 80%;
+    margin-left: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
   .entrees__filters {
-    width: 95%;
-    margin-left: 5px;
+    width: 55%;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-left: 10px;
   }
+  /*ici commence la partie plat*/
   .plats {
-    width: 48%;
-    margin-left: 0;
+    width: 100%;
+    height: 480px;
   }
   .plats__can {
+    margin: 0;
     width: 100%;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .plats__title {
+    width: 80%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .plats__line {
+    width: 40px;
+    margin-left: 10px;
   }
   .plats__filters {
-    width: 95%;
-    margin-left: 5px;
+    width: 55%;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  /*et enfin la partie dessert*/
+  .Desserts {
+    width: 100%;
+    height: 480px;
+  }
+  .Desserts__can {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Desserts__title {
+    width: 80%;
+    justify-content: center;
+  }
+  .Desserts__line {
+    width: 40px;
+    margin-left: 0px;
+  }
+  .Desserts__filters {
+    width: 55%;
+    height: 100px;
   }
 }
 /*ici commence la media queries pour la partie mobile*/
@@ -629,8 +785,8 @@ header {
             animation-duration: 1000ms infinite;
     transition: 1500ms ease-in;
   }
-  .header__logo {
-    margin-left: 40px;
+  .header__bouton {
+    margin-left: -120px;
   }
   .menu {
     height: 1850px;
@@ -669,10 +825,11 @@ header {
   .entrees__can {
     width: 100%;
     height: 480px;
+    align-items: flex-start;
   }
   .entrees__line {
     width: 40px;
-    margin-left: 10px;
+    margin-right: 400px;
   }
   .entrees__texte {
     font-weight: 400;
@@ -680,7 +837,8 @@ header {
   .entrees__title {
     width: 80%;
     margin-left: 10px;
-    padding: 0;
+    margin-right: 50px;
+    justify-content: flex-start;
   }
   .entrees__filters {
     width: 95%;
@@ -700,11 +858,13 @@ header {
   }
   .plats__title {
     width: 80%;
-    margin-left: 10px;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 50px;
   }
   .plats__line {
     width: 40px;
-    margin-left: 10px;
+    margin-right: 400px;
   }
   .plats__filters {
     width: 95%;

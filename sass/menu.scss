@@ -48,9 +48,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: flex-start;
+
+    
     width: 100%;
     height: 80px;
+    border: 2px solid red;
     
 }
 
@@ -59,13 +61,16 @@ header {
     height: 50px;
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: -550px;
+    
+
 }
 
 .header__logo {
     font-family: 'Shrikhand', cursive;
     font-size: 42px;
-    margin-left: 370px;
+    
+
 }
 
 /*ici débute la section menu*/
@@ -98,9 +103,11 @@ header {
 
         display: flex;
         align-items: center;
-        width: 100%;
-        height: 100px;
-        margin-left: 20px;
+            justify-content: flex-start;
+            justify-content: space-between;
+            width: 95%;
+            margin-right: 15px;
+            border: 2px solid red;
     }
 
     &__bouton {
@@ -589,57 +596,237 @@ header {
 /*ici commence la media querie pour tablette */
 @media screen and (max-width:992px) {
     
-
-    .header__logo {
-        margin-left: 200px;
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
     }
+
+    /*ici on crée l animation qui remplit le coeur progressivemnt */
+    @keyframes progress-heart {
+        0% {
+            transform: scaleY(0);
+        }
+
+        25% {
+            transform: scaleY(.3);
+        }
+
+        50% {
+            transform: scaleY(.5);
+        }
+
+        75% {
+            transform: scaleY(.7);
+        }
+
+        100% {
+            transform: scaleY(1);
+        }
+
+    }
+
+    .black {
+
+
+        width: 30px;
+        position: relative;
+        right: -36px;
+
+        &:active {
+            opacity: 1;
+
+        }
+
+    }
+
+    .pink {
+        width: 30px;
+        opacity: 0;
+
+        /*ici on déclenche l animation progress-heart au clic*/
+        &:active {
+            opacity: 1;
+            animation-name: progress-heart;
+            animation-fill-mode: forwards;
+            animation-duration: 1000ms infinite;
+            transition: 1500ms ease-in;
+        }
+    }
+header{
+    
+    align-items: center;
+}
+
+.header__bouton{
+    margin-left: -250px;
+}
+    
+
+    .menu {
+
+        height: 1850px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {
+            display: flex;
+            justify-content: flex-start;
+            justify-content: space-between;
+            width: 90%;
+            margin-right: 15px;
+        }
+
+        &__bouton {
+            height: 80px;
+            margin-top: 80px;
+        }
+    }
+
+    .restaurants__logo {
+        margin-right: 25px;
+    }
+
+    /*ici la partie entrée*/
+    /*ici nous avons la partie speciale pour la note enchantée quatre vignette */
+    .entrees__speciale {
+        width: 100%;
+        height: 600px;
+    }
+
+    
 
     .entrees {
-        width: 48%;
-        margin-left: 0;
+        width: 100%;
+        height: 480px;
+        
+        
+        
 
-        &__speciale{
-            width: 48%;
-            margin-left: 0;
-            background-color: #9356DC;
-        }
-        
-        
-        
         &__can {
             width: 100%;
-            
-            
-            
-            
+            height: 480px;
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        }
+
+        &__canette{
+
+            width: 100%;
+            height: 600px;
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        }
+
+        &__line {
+            width: 40px;
+            margin-left: 10px;
+        }
+
+        &__texte {
+            font-weight: 400;
+
+        }
+
+        &__title {
+            width: 80%;
+            margin-left: 10px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         &__filters {
-            width: 95%;
-            margin-left: 5px;
+            width: 55%;
+            height: 100px;
+            margin-bottom: 20px;
+            margin-left: 10px;
         }
-        
 
     }
 
+    /*ici commence la partie plat*/
     .plats {
-        width: 48%;
-        margin-left: 0;
+        width: 100%;
+        height: 480px;
         
 
+
         &__can {
+            margin: 0;
             width: 100%;
+            height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+
+        &__title {
+            width: 80%;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__line {
+            width: 40px;
+            margin-left: 10px;
         }
 
         &__filters {
-            width: 95%;
-            margin-left: 5px;
+            width: 55%;
+            height: 100px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+
+        }
+
+    }
+
+    /*et enfin la partie dessert*/
+    .Desserts {
+        width: 100%;
+        height: 480px;
+
+        &__can {
+
+            width: 100%;
+            height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+    
+        }
+
+        &__title {
+            width: 80%;
+            justify-content: center;
             
         }
-        
 
+        &__line {
+            width: 40px;
+            margin-left: 0px;
+            
+        }
+
+        &__filters {
+            width: 55%;
+            height: 100px;
+
+        }
     }
 }
+    
 
 /*ici commence la media queries pour la partie mobile*/
 
@@ -704,9 +891,8 @@ header {
     }
 
 
-    .header__logo {
-
-        margin-left: 40px;
+    .header__bouton{
+        margin-left: -120px;
     }
 
     .menu {
@@ -755,13 +941,14 @@ header {
         &__can {
             width: 100%;
             height: 480px;
+            align-items: flex-start;
             
 
         }
 
         &__line {
             width: 40px;
-            margin-left: 10px;
+            margin-right: 400px;
         }
 
         &__texte {
@@ -772,7 +959,8 @@ header {
         &__title {
             width: 80%;
             margin-left: 10px;
-            padding: 0;
+            margin-right: 50px;
+            justify-content: flex-start;
         }
 
         &__filters {
@@ -799,12 +987,15 @@ header {
 
         &__title {
             width: 80%;
-            margin-left: 10px;
+            justify-content: flex-start;
+            margin-left: 0;
+            margin-right: 50px;
+            
         }
 
         &__line {
             width: 40px;
-            margin-left: 10px;
+            margin-right: 400px;
         }
 
         &__filters {
