@@ -46,6 +46,7 @@ a {
     }
 
 }
+
 /*ici on superpose les deux coeurs */
 .black {
     width: 30px;
@@ -72,8 +73,6 @@ a {
         transition: 1500ms ease-in;
     }
 }
-
-
 
 header {
     display: flex;
@@ -113,20 +112,20 @@ header {
     align-items: center;
     position: relative;
     top: -50px;
-    
 
-    &__long{
+
+    &__long {
         width: 100%;
-    height: 1550px;
-    border-radius: 30px 30px 0 0;
-    background-color: #F2F2F2;
-    margin-top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    top: -50px;
+        height: 1550px;
+        border-radius: 30px 30px 0 0;
+        background-color: #F2F2F2;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        top: -50px;
 
     }
 
@@ -161,11 +160,13 @@ header {
         color: white;
         border: none;
         font-size: 25px;
-        &:hover{
+
+        &:hover {
             opacity: 0.5;
         }
     }
-    &__boutonL{
+
+    &__boutonL {
         width: 300px;
         height: 70px;
         border-radius: 50px;
@@ -174,7 +175,8 @@ header {
         color: white;
         border: none;
         font-size: 25px;
-        &:hover{
+
+        &:hover {
             opacity: 0.5;
         }
     }
@@ -358,8 +360,6 @@ header {
     height: 650px;
     display: flex;
     justify-content: center;
-
-
 
     &__can {
         display: flex;
@@ -662,8 +662,6 @@ header {
         font-size: 30px;
     }
 
-    
-
     .menu {
 
         height: 1850px;
@@ -671,7 +669,7 @@ header {
         flex-direction: column;
         justify-content: center;
 
-        &__long{
+        &__long {
             height: 2000px;
         }
 
@@ -686,8 +684,7 @@ header {
         &__bouton {
             height: 80px;
             margin-top: 50px;
-            
-            
+
         }
     }
 
@@ -702,14 +699,9 @@ header {
         height: 600px;
     }
 
-
-
     .entrees {
         width: 100%;
         height: 480px;
-
-
-
 
         &__can {
             width: 100%;
@@ -717,19 +709,14 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-
-
         }
 
         &__canette {
-
             width: 100%;
             height: 600px;
             display: flex;
             align-items: center;
             justify-content: center;
-
-
         }
 
         &__line {
@@ -808,7 +795,6 @@ header {
             align-items: center;
             justify-content: center;
 
-
         }
 
         &__title {
@@ -820,13 +806,11 @@ header {
         &__line {
             width: 40px;
             margin-left: 0px;
-
         }
 
         &__filters {
             width: 55%;
             height: 100px;
-
         }
     }
 }
@@ -836,10 +820,10 @@ header {
 
 @media screen and (max-width: 768px) {
 
-    .menu__long{
+    .menu__long {
         height: 2000px;
     }
-    
+
     .entrees {
 
         &__can {
