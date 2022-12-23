@@ -23,22 +23,65 @@ a {
   color: black;
 }
 
+/*ici on crée l animation de remplissage progressif du coeur*/
+@-webkit-keyframes progress-heart {
+  0% {
+    transform: scaleY(0);
+  }
+  25% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(0.5);
+  }
+  75% {
+    transform: scaleY(0.7);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes progress-heart {
+  0% {
+    transform: scaleY(0);
+  }
+  25% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(0.5);
+  }
+  75% {
+    transform: scaleY(0.7);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 /*ici on superpose les deux coeurs */
 .black {
   width: 30px;
   position: relative;
-  right: -35px;
+  right: -36px;
 }
 .black:active {
-  opacity: 0;
+  opacity: 1;
 }
 
 .pink {
   width: 30px;
   opacity: 0;
+  /*ici on déclenche l animation progress-heart au clic*/
 }
 .pink:active {
   opacity: 1;
+  -webkit-animation-name: progress-heart;
+          animation-name: progress-heart;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1000ms infinite;
+          animation-duration: 1000ms infinite;
+  transition: 1500ms ease-in;
 }
 
 header {
@@ -78,6 +121,19 @@ header {
   position: relative;
   top: -50px;
 }
+.menu__long {
+  width: 100%;
+  height: 1550px;
+  border-radius: 30px 30px 0 0;
+  background-color: #F2F2F2;
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: -50px;
+}
 .menu__picture {
   width: 100%;
   height: 450px;
@@ -100,11 +156,27 @@ header {
   width: 300px;
   height: 70px;
   border-radius: 50px;
-  margin-top: 10px;
+  margin-bottom: 80px;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
   border: none;
   font-size: 25px;
+}
+.menu__bouton:hover {
+  opacity: 0.5;
+}
+.menu__boutonL {
+  width: 300px;
+  height: 70px;
+  border-radius: 50px;
+  margin-bottom: 80px;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  color: white;
+  border: none;
+  font-size: 25px;
+}
+.menu__boutonL:hover {
+  opacity: 0.5;
 }
 .menu__titre {
   font-family: "Shrikhand", cursive;
@@ -540,69 +612,14 @@ header {
     font-family: "Roboto", sans-serif;
     font-size: 30px;
   }
-  /*ici on crée l animation qui remplit le coeur progressivemnt */
-  @-webkit-keyframes progress-heart {
-    0% {
-      transform: scaleY(0);
-    }
-    25% {
-      transform: scaleY(0.3);
-    }
-    50% {
-      transform: scaleY(0.5);
-    }
-    75% {
-      transform: scaleY(0.7);
-    }
-    100% {
-      transform: scaleY(1);
-    }
-  }
-  @keyframes progress-heart {
-    0% {
-      transform: scaleY(0);
-    }
-    25% {
-      transform: scaleY(0.3);
-    }
-    50% {
-      transform: scaleY(0.5);
-    }
-    75% {
-      transform: scaleY(0.7);
-    }
-    100% {
-      transform: scaleY(1);
-    }
-  }
-  .black {
-    width: 30px;
-    position: relative;
-    right: -36px;
-  }
-  .black:active {
-    opacity: 1;
-  }
-  .pink {
-    width: 30px;
-    opacity: 0;
-    /*ici on déclenche l animation progress-heart au clic*/
-  }
-  .pink:active {
-    opacity: 1;
-    -webkit-animation-name: progress-heart;
-            animation-name: progress-heart;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-duration: 1000ms infinite;
-            animation-duration: 1000ms infinite;
-    transition: 1500ms ease-in;
-  }
   .menu {
     height: 1850px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .menu__long {
+    height: 2000px;
   }
   .menu__title {
     display: flex;
@@ -613,7 +630,7 @@ header {
   }
   .menu__bouton {
     height: 80px;
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .restaurants__logo {
     margin-right: 25px;
@@ -718,6 +735,9 @@ header {
 }
 /*ici commence la media queries pour la partie mobile*/
 @media screen and (max-width: 768px) {
+  .menu__long {
+    height: 2000px;
+  }
   .entrees__can {
     align-items: flex-start;
   }

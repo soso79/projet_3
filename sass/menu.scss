@@ -23,39 +23,64 @@ a {
     color: black;
 }
 
+/*ici on crée l animation de remplissage progressif du coeur*/
+@keyframes progress-heart {
+    0% {
+        transform: scaleY(0);
+    }
+
+    25% {
+        transform: scaleY(.3);
+    }
+
+    50% {
+        transform: scaleY(.5);
+    }
+
+    75% {
+        transform: scaleY(.7);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+
+}
 /*ici on superpose les deux coeurs */
 .black {
     width: 30px;
     position: relative;
-    right: -35px;
+    right: -36px;
 
     &:active {
-        opacity: 0;
+        opacity: 1;
+
     }
+
 }
 
 .pink {
     width: 30px;
     opacity: 0;
 
+    /*ici on déclenche l animation progress-heart au clic*/
     &:active {
         opacity: 1;
+        animation-name: progress-heart;
+        animation-fill-mode: forwards;
+        animation-duration: 1000ms infinite;
+        transition: 1500ms ease-in;
     }
 }
+
 
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-
-
     width: 100%;
     height: 80px;
-
-
 }
 
 .header__arrow {
@@ -65,23 +90,17 @@ header {
     height: 50px;
     position: absolute;
     left: 30px;
-
-
-
-
-
 }
 
 .header__logo {
     font-family: 'Shrikhand', cursive;
     font-size: 42px;
 
-
-
 }
 
 /*ici débute la section menu*/
 /*on utilise position relative afin que l image et le menu se chevauche*/
+
 .menu {
     width: 100%;
     height: 1550px;
@@ -94,6 +113,22 @@ header {
     align-items: center;
     position: relative;
     top: -50px;
+    
+
+    &__long{
+        width: 100%;
+    height: 1550px;
+    border-radius: 30px 30px 0 0;
+    background-color: #F2F2F2;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -50px;
+
+    }
 
     &__picture {
         width: 100%;
@@ -121,11 +156,27 @@ header {
         width: 300px;
         height: 70px;
         border-radius: 50px;
-        margin-top: 10px;
+        margin-bottom: 80px;
         background-image: linear-gradient(to top, #9356DC, #FF79DA);
         color: white;
         border: none;
         font-size: 25px;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    &__boutonL{
+        width: 300px;
+        height: 70px;
+        border-radius: 50px;
+        margin-bottom: 80px;
+        background-image: linear-gradient(to top, #9356DC, #FF79DA);
+        color: white;
+        border: none;
+        font-size: 25px;
+        &:hover{
+            opacity: 0.5;
+        }
     }
 
     &__titre {
@@ -611,55 +662,7 @@ header {
         font-size: 30px;
     }
 
-    /*ici on crée l animation qui remplit le coeur progressivemnt */
-    @keyframes progress-heart {
-        0% {
-            transform: scaleY(0);
-        }
-
-        25% {
-            transform: scaleY(.3);
-        }
-
-        50% {
-            transform: scaleY(.5);
-        }
-
-        75% {
-            transform: scaleY(.7);
-        }
-
-        100% {
-            transform: scaleY(1);
-        }
-
-    }
-
-    .black {
-        width: 30px;
-        position: relative;
-        right: -36px;
-
-        &:active {
-            opacity: 1;
-
-        }
-
-    }
-
-    .pink {
-        width: 30px;
-        opacity: 0;
-
-        /*ici on déclenche l animation progress-heart au clic*/
-        &:active {
-            opacity: 1;
-            animation-name: progress-heart;
-            animation-fill-mode: forwards;
-            animation-duration: 1000ms infinite;
-            transition: 1500ms ease-in;
-        }
-    }
+    
 
     .menu {
 
@@ -667,6 +670,10 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        &__long{
+            height: 2000px;
+        }
 
         &__title {
             display: flex;
@@ -678,7 +685,9 @@ header {
 
         &__bouton {
             height: 80px;
-            margin-top: 80px;
+            margin-top: 50px;
+            
+            
         }
     }
 
@@ -827,6 +836,10 @@ header {
 
 @media screen and (max-width: 768px) {
 
+    .menu__long{
+        height: 2000px;
+    }
+    
     .entrees {
 
         &__can {

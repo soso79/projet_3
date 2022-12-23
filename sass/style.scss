@@ -272,7 +272,7 @@ a {
 
     }
 
-    /*ici on configure le survol de l con*/
+    /*ici on configure le survol de l icon*/
     &__icon {
         &:hover {
             color: #9356DC;
@@ -371,7 +371,7 @@ a {
     position: relative;
     right: -30px;
 
-    &:hover {
+    &:active {
         opacity: 0;
     }
 
@@ -381,7 +381,7 @@ a {
     width: 30px;
     opacity: 0;
 
-    &:hover {
+    &:active {
         animation: petit_coeur 3s;
         opacity: 1;
     }

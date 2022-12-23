@@ -221,7 +221,7 @@ a {
   flex-wrap: wrap;
   /*ici on donne forme au filtre et on configure le survol en lui donnant un background et en augmentant l effet d ombre*/
   /*ici on a la partie qui contient le chiffre dans le rond violet*/
-  /*ici on configure le survol de l con*/
+  /*ici on configure le survol de l icon*/
 }
 .fonction__title {
   width: 100%;
@@ -363,7 +363,7 @@ a {
   position: relative;
   right: -30px;
 }
-.black:hover {
+.black:active {
   opacity: 0;
 }
 
@@ -371,7 +371,7 @@ a {
   width: 30px;
   opacity: 0;
 }
-.pink:hover {
+.pink:active {
   -webkit-animation: petit_coeur 3s;
           animation: petit_coeur 3s;
   opacity: 1;
