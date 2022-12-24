@@ -79,8 +79,8 @@ a {
           animation-name: progress-heart;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 1000ms infinite;
-          animation-duration: 1000ms infinite;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
   transition: 1500ms ease-in;
 }
 
