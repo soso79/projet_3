@@ -153,7 +153,7 @@ header {
 
     &__bouton {
         width: 300px;
-        height: 70px;
+        height: 72px;
         border-radius: 50px;
         margin-bottom: 80px;
         background-image: linear-gradient(to top, #9356DC, #FF79DA);
@@ -216,7 +216,7 @@ header {
     @keyframes apparition {
 
         0% {
-            transform: translateY(-100px);
+            transform: translateY(100px);
             opacity: 0;
         }
 

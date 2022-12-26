@@ -9,13 +9,21 @@ body {
 
 @keyframes petit_coeur {
     0% {
-        transform: scale(1);
+      transform: scaleY(0);
     }
-
+    25% {
+      transform: scaleY(0.3);
+    }
+    50% {
+      transform: scaleY(0.5);
+    }
+    75% {
+      transform: scaleY(0.7);
+    }
     100% {
-        transform: scale(1.5);
+      transform: scaleY(1);
     }
-}
+  }
 
 /*on determine ici la taille du loader etc le temps d animation et l animation qui sera utilisé*/
 .loader {
@@ -197,6 +205,7 @@ a {
 
 #reservation__texte {
     color: #e8dbf9;
+    font-size: 25px;
 }
 
 .fonction {
@@ -233,7 +242,7 @@ a {
         margin-bottom: 40px;
 
         &:hover {
-            background-color: #cda8f9;
+            background-color: #e0cafa;
             box-shadow: 10px 10px 12px gray;
         }
     }
@@ -255,7 +264,7 @@ a {
         align-items: center;
         justify-content: center;
         width: 50px;
-        height: 40px;
+        height: 50px;
         border-radius: 50%;
         background-color: #9356DC;
         position: relative;
