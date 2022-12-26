@@ -282,9 +282,9 @@ header {
   margin-bottom: 40px;
   -webkit-animation: apparition 5s;
           animation: apparition 5s;
-  overflow: hidden;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  overflow: hidden;
   /*ici c est la partie actice donc au clik nous allons déclencher l animation */
 }
 .entrees__filters:active {
@@ -298,15 +298,13 @@ header {
   border-radius: 0 20px 20px 0;
   transform-origin: right;
   transform: scaleX(1);
-  transition: transform 1000ms;
+  transition: transform 1000ms ease-in-out;
+  -webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .entrees__filters:active .entrees__logo {
   transform: rotate(-360deg);
   transition: transform 1200ms ease-in-out;
-}
-.entrees__filters:active .entrees__prix {
-  transform: translateX(-30%);
-  transition: transform 400ms ease-in;
 }
 .entrees__filters:active .entrees__texte {
   max-width: 40%;
@@ -322,6 +320,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-right: -10px;
+  border: 2px solid red;
 }
 .entrees__check {
   background-color: #99E2D0;
@@ -332,7 +331,7 @@ header {
   justify-content: center;
   width: 100px;
   height: 100px;
-  transform: scaleX(0);
+  transform: scaleX(1);
   transition: 0.5s;
 }
 .entrees__logo {

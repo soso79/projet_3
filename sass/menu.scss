@@ -288,8 +288,9 @@ header {
         box-shadow: 4px 4px 10px gray;
         margin-bottom: 40px;
         animation: apparition 5s;
-        overflow: hidden;
         animation-fill-mode: forwards;
+        overflow: hidden;
+        
 
         /*ici c est la partie actice donc au clik nous allons déclencher l animation */
         &:active {
@@ -300,7 +301,8 @@ header {
                 border-radius: 0 20px 20px 0;
                 transform-origin: right;
                 transform: scaleX(1);
-                transition: transform 1000ms;
+                transition: transform 1000ms ease-in-out;
+                animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
             }
 
             /*ici grace a rotate le logo va tourner sur lui meme*/
@@ -310,10 +312,7 @@ header {
             }
 
             /*ici grace a translate (x) le prix va pouvoir glisser */
-            .entrees__prix {
-                transform: translateX(-30%);
-                transition: transform 400ms ease-in;
-            }
+            
 
             /*ici grace a text overflow ellipsisi nous allons pouvoir faire apparaitre les trois petits points au clic*/
             .entrees__texte {
@@ -333,6 +332,7 @@ header {
         justify-content: center;
         align-items: center;
         margin-right: -10px;
+        border: 2px solid red;
     }
 
     &__check {
@@ -344,8 +344,9 @@ header {
         justify-content: center;
         width: 100px;
         height: 100px;
-        transform: scaleX(0);
+        transform: scaleX(1);
         transition: .5s;
+        
     }
 
     &__logo {
