@@ -264,6 +264,7 @@ header {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         margin-left: 10px;
+    
     }
 
     &__title {
@@ -291,6 +292,7 @@ header {
         animation-fill-mode: forwards;
         overflow: hidden;
         
+        
 
         /*ici c est la partie actice donc au clik nous allons déclencher l animation */
         &:active {
@@ -298,29 +300,22 @@ header {
             /*ici nous utilisons transform origin pour que le point d ancrage soit a droite , avec une transition de 1000ms*/
             .entrees__check {
                 margin-right: 0;
-                border-radius: 0 20px 20px 0;
-                transform-origin: right;
-                transform: scaleX(1);
-                transition: transform 1000ms ease-in-out;
-                animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+                
             }
-
-            /*ici grace a rotate le logo va tourner sur lui meme*/
             .entrees__logo {
                 transform: rotate(-360deg);
                 transition: transform 1200ms ease-in-out;
             }
 
-            /*ici grace a translate (x) le prix va pouvoir glisser */
-            
-
-            /*ici grace a text overflow ellipsisi nous allons pouvoir faire apparaitre les trois petits points au clic*/
             .entrees__texte {
                 max-width: 40%;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
+
             }
+
+            
         }
     }
 
@@ -331,8 +326,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: -10px;
-        border: 2px solid red;
+        
     }
 
     &__check {
@@ -342,9 +336,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100px;
         height: 100px;
-        transform: scaleX(1);
         transition: .5s;
         
     }
@@ -418,20 +410,11 @@ header {
 
             .plats__check {
                 margin-right: 0;
-                border-radius: 0 20px 20px 0;
-                transform-origin: right;
-                transform: scaleX(1);
-                transition: transform 1000ms;
+                
             }
-
             .plats__logo {
                 transform: rotate(-360deg);
                 transition: transform 1200ms ease-in-out;
-            }
-
-            .plats__prix {
-                transform: translateX(-30%);
-                transition: transform 400ms ease-in;
             }
 
             .plats__texte {
@@ -441,6 +424,7 @@ header {
                 white-space: nowrap;
 
             }
+
         }
     }
 
@@ -451,7 +435,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: -10px;
+    
     }
 
     &__check {
@@ -461,9 +445,8 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100px;
         height: 100px;
-        transform: scaleX(0);
+        
         transition: .5s;
     }
 
@@ -542,20 +525,11 @@ header {
 
             .Desserts__check {
                 margin-right: 0;
-                border-radius: 0 20px 20px 0;
-                transform-origin: right;
-                transform: scaleX(1);
-                transition: transform 1000ms;
+                
             }
-
             .Desserts__logo {
                 transform: rotate(-360deg);
                 transition: transform 1200ms ease-in-out;
-            }
-
-            .Desserts__prix {
-                transform: translateX(-30%);
-                transition: transform 400ms ease-in;
             }
 
             .Desserts__texte {
@@ -563,6 +537,7 @@ header {
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
+
             }
         }
     }
@@ -574,7 +549,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: -10px;
+        
     }
 
     &__check {
@@ -584,9 +559,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100px;
         height: 100%;
-        transform: scaleX(0);
         transition: .5s;
     }
 
