@@ -289,18 +289,9 @@ header {
 }
 .entrees__filters:active {
   /*ici nous utilisons transform origin pour que le point d ancrage soit a droite , avec une transition de 1000ms*/
-  /*ici grace a rotate le logo va tourner sur lui meme*/
-  /*ici grace a translate (x) le prix va pouvoir glisser */
-  /*ici grace a text overflow ellipsisi nous allons pouvoir faire apparaitre les trois petits points au clic*/
 }
 .entrees__filters:active .entrees__check {
   margin-right: 0;
-  border-radius: 0 20px 20px 0;
-  transform-origin: right;
-  transform: scaleX(1);
-  transition: transform 1000ms ease-in-out;
-  -webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-          animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .entrees__filters:active .entrees__logo {
   transform: rotate(-360deg);
@@ -319,8 +310,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -10px;
-  border: 2px solid red;
 }
 .entrees__check {
   background-color: #99E2D0;
@@ -329,9 +318,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
   height: 100px;
-  transform: scaleX(1);
   transition: 0.5s;
 }
 .entrees__logo {
@@ -399,18 +386,10 @@ header {
 }
 .plats__filters:active .plats__check {
   margin-right: 0;
-  border-radius: 0 20px 20px 0;
-  transform-origin: right;
-  transform: scaleX(1);
-  transition: transform 1000ms;
 }
 .plats__filters:active .plats__logo {
   transform: rotate(-360deg);
   transition: transform 1200ms ease-in-out;
-}
-.plats__filters:active .plats__prix {
-  transform: translateX(-30%);
-  transition: transform 400ms ease-in;
 }
 .plats__filters:active .plats__texte {
   max-width: 40%;
@@ -425,7 +404,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -10px;
 }
 .plats__check {
   background-color: #99E2D0;
@@ -434,9 +412,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
   height: 100px;
-  transform: scaleX(0);
   transition: 0.5s;
 }
 .plats__logo {
@@ -509,18 +485,10 @@ header {
 }
 .Desserts__filters:active .Desserts__check {
   margin-right: 0;
-  border-radius: 0 20px 20px 0;
-  transform-origin: right;
-  transform: scaleX(1);
-  transition: transform 1000ms;
 }
 .Desserts__filters:active .Desserts__logo {
   transform: rotate(-360deg);
   transition: transform 1200ms ease-in-out;
-}
-.Desserts__filters:active .Desserts__prix {
-  transform: translateX(-30%);
-  transition: transform 400ms ease-in;
 }
 .Desserts__filters:active .Desserts__texte {
   max-width: 40%;
@@ -535,7 +503,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -10px;
 }
 .Desserts__check {
   background-color: #99E2D0;
@@ -544,9 +511,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
   height: 100%;
-  transform: scaleX(0);
   transition: 0.5s;
 }
 .Desserts__logo {

@@ -267,7 +267,7 @@ a {
   margin-bottom: 40px;
 }
 .fonction__filters:hover {
-  background-color: #cda8f9;
+  background-color: rgba(147, 86, 220, 0.1);
   box-shadow: 10px 10px 12px gray;
 }
 .fonction__logo {
