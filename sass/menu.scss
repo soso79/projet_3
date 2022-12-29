@@ -21,6 +21,7 @@ span {
 a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 /*ici on crée l animation de remplissage progressif du coeur*/
@@ -52,9 +53,13 @@ a {
     width: 30px;
     position: relative;
     right: -36px;
+    
+    
 
     &:active {
+        
         opacity: 1;
+        
 
     }
 
@@ -63,14 +68,19 @@ a {
 .pink {
     width: 30px;
     opacity: 0;
+    
+    
 
     /*ici on déclenche l animation progress-heart au clic*/
     &:active {
+        cursor: pointer;
         opacity: 1;
         animation-name: progress-heart;
         animation-fill-mode: forwards;
         animation-duration: 1000ms;
         transition: 1500ms ease-in;
+        
+        
     }
 }
 
@@ -160,6 +170,7 @@ header {
         color: white;
         border: none;
         font-size: 25px;
+        
 
         &:hover {
             opacity: 0.5;
@@ -175,9 +186,11 @@ header {
         color: white;
         border: none;
         font-size: 25px;
+        
 
         &:hover {
             opacity: 0.5;
+            
         }
     }
 
@@ -214,6 +227,7 @@ header {
 
     /*ici nous créons l animation apparation pour que les différentes section apparaissent sur l axe y*/
     @keyframes apparition {
+        
 
         0% {
             transform: translateY(100px);
@@ -224,6 +238,7 @@ header {
             transform: translateY(0px);
             opacity: 1;
         }
+    
     }
 
     &__icon {
@@ -292,14 +307,18 @@ header {
         animation-fill-mode: forwards;
         overflow: hidden;
         
+
+        
         
 
         /*ici c est la partie actice donc au clik nous allons déclencher l animation */
         &:active {
+            cursor: pointer;
 
             /*ici nous utilisons transform origin pour que le point d ancrage soit a droite , avec une transition de 1000ms*/
             .entrees__check {
                 margin-right: 0;
+                
                 
             }
             .entrees__logo {
@@ -338,6 +357,7 @@ header {
         justify-content: center;
         height: 100px;
         transition: .5s;
+        
         
     }
 
@@ -407,6 +427,7 @@ header {
 
         /*nous avons utilisé la meme méthode que pour entrées rien ne change */
         &:active {
+            cursor: pointer;
 
             .plats__check {
                 margin-right: 0;
@@ -522,6 +543,7 @@ header {
         overflow: hidden;
 
         &:active {
+            cursor: pointer;
 
             .Desserts__check {
                 margin-right: 0;
